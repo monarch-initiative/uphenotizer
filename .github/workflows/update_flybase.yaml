@@ -1,0 +1,29 @@
+name: Update FlyBase phenotype terms
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 13 * * 1"
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 1
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v2
+      - name: Run diff
+        run: make build_flybase -B
+      - name: Set up python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.10
+      - name: Install dependencies
+        run: pip install --upgrade pip && pip install -r requirements.txt  
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Update DOSDP template and SPARQL qc documentation
+          title: 'Update DOSDP files for FBBT'
+          body: |
+            Updates FBBT template
+          assignees: kevinschaper
