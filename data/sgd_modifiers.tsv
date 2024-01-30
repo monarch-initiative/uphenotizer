@@ -1,0 +1,26 @@
+pato_id	pato_id_name
+APO:0000003	decreased
+APO:0000004	increased
+APO:0000112	inviable
+APO:0000113	viable
+APO:0000002	abnormal
+APO:0000117	normal
+APO:0000245	decreased rate
+APO:0000152	haploinsufficient
+APO:0000005	absent
+APO:0000097	auxotrophy
+APO:0000246	increased rate
+APO:0000153	petite
+APO:0000252	normal rate
+APO:0000154	petite-negative
+APO:0000250	arrested
+APO:0000249	delayed
+APO:0000330	haploproficient
+APO:0000045	sterile
+APO:0000248	increased duration
+APO:0000251	premature
+APO:0000247	decreased duration
+APO:0000043	spore wall formation
+APO:0000076	mitochondrial transport
+APO:0000149	protein/peptide accumulation
+APO:0000310	growth in exponential phase

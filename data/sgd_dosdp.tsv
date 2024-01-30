@@ -1,0 +1,697 @@
+pato_id	pato_id_name	affected_entity_1_super	affected_entity_1_super_name
+APO:0000003	decreased	APO:0000087	resistance to chemicals
+APO:0000003	decreased	APO:0000110	competitive fitness
+APO:0000003	decreased	APO:0000095	chemical compound accumulation
+APO:0000004	increased	APO:0000095	chemical compound accumulation
+APO:0000112	inviable		
+APO:0000004	increased	APO:0000082	osmotic stress resistance
+APO:0000003	decreased	APO:0000082	osmotic stress resistance
+APO:0000113	viable		
+APO:0000003	decreased	APO:0000028	invasive growth
+APO:0000004	increased	APO:0000028	invasive growth
+APO:0000004	increased	APO:0000147	heat sensitivity
+APO:0000003	decreased	APO:0000144	telomere length
+APO:0000003	decreased	APO:0000102	respiratory metabolism
+APO:0000002	abnormal	APO:0000071	cytokinesis
+APO:0000002	abnormal	APO:0000039	meiosis
+APO:0000117	normal	APO:0000106	vegetative growth
+APO:0000004	increased	APO:0000087	resistance to chemicals
+APO:0000245	decreased rate	APO:0000308	fermentative growth
+APO:0000117	normal	APO:0000087	resistance to chemicals
+APO:0000003	decreased	APO:0000195	gamma ray resistance
+APO:0000002	abnormal	APO:0000056	bud neck morphology
+APO:0000152	haploinsufficient		
+APO:0000003	decreased	APO:0000041	sporulation
+APO:0000002	abnormal	APO:0000212	bud morphology
+APO:0000002	abnormal	APO:0000253	cell cycle progression
+APO:0000002	abnormal	APO:0000200	budding pattern
+APO:0000002	abnormal	APO:0000051	cell shape
+APO:0000003	decreased	APO:0000106	vegetative growth
+APO:0000004	increased	APO:0000144	telomere length
+APO:0000245	decreased rate	APO:0000310	growth in exponential phase
+APO:0000004	increased	APO:0000046	silencing
+APO:0000002	abnormal	APO:0000143	chromosome/plasmid maintenance
+APO:0000003	decreased	APO:0000047	transposable element transposition
+APO:0000004	increased	APO:0000199	chitin deposition
+APO:0000117	normal	APO:0000199	chitin deposition
+APO:0000003	decreased	APO:0000199	chitin deposition
+APO:0000002	abnormal	APO:0000209	protein/peptide distribution
+APO:0000003	decreased	APO:0000193	resistance to enzymatic treatment
+APO:0000003	decreased	APO:0000202	alkaline pH resistance
+APO:0000003	decreased	APO:0000205	ionic stress resistance
+APO:0000005	absent	APO:0000041	sporulation
+APO:0000002	abnormal	APO:0000075	endocytosis
+APO:0000004	increased	APO:0000148	cold sensitivity
+APO:0000004	increased	APO:0000198	mutation frequency
+APO:0000003	decreased	APO:0000098	utilization of carbon source
+APO:0000005	absent	APO:0000099	utilization of nitrogen source
+APO:0000117	normal	APO:0000102	respiratory metabolism
+APO:0000097	auxotrophy		
+APO:0000246	increased rate	APO:0000309	respiratory growth
+APO:0000004	increased	APO:0000110	competitive fitness
+APO:0000245	decreased rate	APO:0000309	respiratory growth
+APO:0000153	petite		
+APO:0000003	decreased	APO:0000085	UV resistance
+APO:0000002	abnormal	APO:0000079	vacuolar transport
+APO:0000003	decreased	APO:0000125	utilization of phosphorus source
+APO:0000252	normal rate	APO:0000310	growth in exponential phase
+APO:0000117	normal	APO:0000125	utilization of phosphorus source
+APO:0000003	decreased	APO:0000316	chronological lifespan
+APO:0000003	decreased	APO:0000215	toxin resistance
+APO:0000005	absent	APO:0000309	respiratory growth
+APO:0000002	abnormal	APO:0000059	vacuolar morphology
+APO:0000002	abnormal	APO:0000131	protein/peptide modification
+APO:0000002	abnormal	APO:0000118	nuclear position
+APO:0000003	decreased	APO:0000148	cold sensitivity
+APO:0000003	decreased	APO:0000196	mating type switching
+APO:0000003	decreased	APO:0000075	endocytosis
+APO:0000002	abnormal	APO:0000129	protein transport
+APO:0000003	decreased	APO:0000090	metal resistance
+APO:0000004	increased	APO:0000196	mating type switching
+APO:0000003	decreased	APO:0000149	protein/peptide accumulation
+APO:0000004	increased	APO:0000131	protein/peptide modification
+APO:0000003	decreased	APO:0000083	oxidative stress resistance
+APO:0000003	decreased	APO:0000201	acid pH resistance
+APO:0000117	normal	APO:0000041	sporulation
+APO:0000004	increased	APO:0000090	metal resistance
+APO:0000117	normal	APO:0000090	metal resistance
+APO:0000004	increased	APO:0000130	small molecule transport
+APO:0000002	abnormal	APO:0000050	cellular morphology
+APO:0000117	normal	APO:0000147	heat sensitivity
+APO:0000003	decreased	APO:0000130	small molecule transport
+APO:0000154	petite-negative		
+APO:0000003	decreased	APO:0000312	cell death
+APO:0000002	abnormal	APO:0000041	sporulation
+APO:0000004	increased	APO:0000027	filamentous growth
+APO:0000003	decreased	APO:0000078	protein secretion
+APO:0000004	increased	APO:0000149	protein/peptide accumulation
+APO:0000005	absent	APO:0000106	vegetative growth
+APO:0000004	increased	APO:0000106	vegetative growth
+APO:0000005	absent	APO:0000071	cytokinesis
+APO:0000002	abnormal	APO:0000149	protein/peptide accumulation
+APO:0000005	absent	APO:0000042	spore germination
+APO:0000005	absent	APO:0000028	invasive growth
+APO:0000002	abnormal	APO:0000208	chromosome segregation
+APO:0000002	abnormal	APO:0000055	mitochondrial morphology
+APO:0000003	decreased	APO:0000204	hyperosmotic stress resistance
+APO:0000003	decreased	APO:0000143	chromosome/plasmid maintenance
+APO:0000004	increased	APO:0000083	oxidative stress resistance
+APO:0000004	increased	APO:0000159	biofilm formation
+APO:0000004	increased	APO:0000065	flocculation
+APO:0000003	decreased	APO:0000081	killer toxin resistance
+APO:0000003	decreased	APO:0000131	protein/peptide modification
+APO:0000004	increased	APO:0000197	colony sectoring
+APO:0000002	abnormal	APO:0000120	actin cytoskeleton morphology
+APO:0000004	increased	APO:0000316	chronological lifespan
+APO:0000002	abnormal	APO:0000242	lipid particle morphology
+APO:0000004	increased	APO:0000078	protein secretion
+APO:0000002	abnormal	APO:0000043	spore wall formation
+APO:0000005	absent	APO:0000105	mitochondrial genome maintenance
+APO:0000004	increased	APO:0000215	toxin resistance
+APO:0000004	increased	APO:0000052	cell size
+APO:0000003	decreased	APO:0000052	cell size
+APO:0000003	decreased	APO:0000124	pheromone-induced cell cycle arrest
+APO:0000005	absent	APO:0000029	pseudohyphal growth
+APO:0000250	arrested	APO:0000255	cell cycle progression in G1 phase
+APO:0000117	normal	APO:0000130	small molecule transport
+APO:0000003	decreased	APO:0000111	viability
+APO:0000005	absent	APO:0000098	utilization of carbon source
+APO:0000003	decreased	APO:0000042	spore germination
+APO:0000002	abnormal	APO:0000078	protein secretion
+APO:0000002	abnormal	APO:0000096	nutrient utilization
+APO:0000004	increased	APO:0000030	lifespan
+APO:0000004	increased	APO:0000022	protein activity
+APO:0000003	decreased	APO:0000157	utilization of iron source
+APO:0000002	abnormal	APO:0000105	mitochondrial genome maintenance
+APO:0000005	absent	APO:0000127	nuclear export
+APO:0000003	decreased	APO:0000091	starvation resistance
+APO:0000004	increased	APO:0000334	innate thermotolerance
+APO:0000245	decreased rate	APO:0000106	vegetative growth
+APO:0000003	decreased	APO:0000326	desiccation resistance
+APO:0000245	decreased rate	APO:0000307	anaerobic growth
+APO:0000005	absent	APO:0000124	pheromone-induced cell cycle arrest
+APO:0000003	decreased	APO:0000225	mitotic recombination
+APO:0000117	normal	APO:0000209	protein/peptide distribution
+APO:0000003	decreased	APO:0000128	peroxisomal transport
+APO:0000005	absent	APO:0000047	transposable element transposition
+APO:0000003	decreased	APO:0000096	nutrient utilization
+APO:0000003	decreased	APO:0000044	sporulation efficiency
+APO:0000002	abnormal	APO:0000095	chemical compound accumulation
+APO:0000004	increased	APO:0000224	RNA accumulation
+APO:0000004	increased	APO:0000089	budding index
+APO:0000003	decreased	APO:0000224	RNA accumulation
+APO:0000003	decreased	APO:0000080	stress resistance
+APO:0000003	decreased	APO:0000317	replicative lifespan
+APO:0000117	normal	APO:0000052	cell size
+APO:0000002	abnormal	APO:0000213	spindle morphology
+APO:0000117	normal	APO:0000089	budding index
+APO:0000003	decreased	APO:0000022	protein activity
+APO:0000002	abnormal	APO:0000064	liquid culture appearance
+APO:0000117	normal	APO:0000037	pheromone sensitivity
+APO:0000003	decreased	APO:0000333	acquired thermotolerance
+APO:0000003	decreased	APO:0000040	meiotic recombination
+APO:0000117	normal	APO:0000195	gamma ray resistance
+APO:0000005	absent	APO:0000083	oxidative stress resistance
+APO:0000117	normal	APO:0000085	UV resistance
+APO:0000004	increased	APO:0000029	pseudohyphal growth
+APO:0000003	decreased	APO:0000089	budding index
+APO:0000004	increased	APO:0000141	critical cell size at START (G1 cell-size checkpoint)
+APO:0000004	increased	APO:0000155	apoptosis
+APO:0000003	decreased	APO:0000034	mating efficiency
+APO:0000004	increased	APO:0000333	acquired thermotolerance
+APO:0000004	increased	APO:0000080	stress resistance
+APO:0000003	decreased	APO:0000079	vacuolar transport
+APO:0000249	delayed	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000003	decreased	APO:0000307	anaerobic growth
+APO:0000002	abnormal	APO:0000106	vegetative growth
+APO:0000246	increased rate	APO:0000101	fermentative metabolism
+APO:0000003	decreased	APO:0000109	survival rate in stationary phase
+APO:0000004	increased	APO:0000109	survival rate in stationary phase
+APO:0000005	absent	APO:0000043	spore wall formation
+APO:0000002	abnormal	APO:0000102	respiratory metabolism
+APO:0000005	absent	APO:0000032	mating response
+APO:0000003	decreased	APO:0000032	mating response
+APO:0000117	normal	APO:0000095	chemical compound accumulation
+APO:0000005	absent	APO:0000087	resistance to chemicals
+APO:0000003	decreased	APO:0000086	X ray resistance
+APO:0000002	abnormal	APO:0000038	shmoo formation
+APO:0000005	absent	APO:0000123	recovery from pheromone-induced cell cycle arrest
+APO:0000004	increased	APO:0000085	UV resistance
+APO:0000003	decreased	APO:0000105	mitochondrial genome maintenance
+APO:0000003	decreased	APO:0000099	utilization of nitrogen source
+APO:0000005	absent	APO:0000096	nutrient utilization
+APO:0000003	decreased	APO:0000074	autophagy
+APO:0000004	increased	APO:0000081	killer toxin resistance
+APO:0000004	increased	APO:0000102	respiratory metabolism
+APO:0000005	absent	APO:0000131	protein/peptide modification
+APO:0000002	abnormal	APO:0000025	axial budding pattern
+APO:0000005	absent	APO:0000102	respiratory metabolism
+APO:0000002	abnormal	APO:0000072	mitotic cell cycle
+APO:0000246	increased rate	APO:0000310	growth in exponential phase
+APO:0000003	decreased	APO:0000029	pseudohyphal growth
+APO:0000003	decreased	APO:0000038	shmoo formation
+APO:0000002	abnormal	APO:0000077	nuclear transport
+APO:0000002	abnormal	APO:0000074	autophagy
+APO:0000005	absent	APO:0000209	protein/peptide distribution
+APO:0000004	increased	APO:0000220	necrotic cell death
+APO:0000117	normal	APO:0000024	budding
+APO:0000250	arrested	APO:0000253	cell cycle progression
+APO:0000003	decreased	APO:0000030	lifespan
+APO:0000005	absent	APO:0000219	utilization of sulfur source
+APO:0000002	abnormal	APO:0000199	chitin deposition
+APO:0000002	abnormal	APO:0000061	colony color
+APO:0000002	abnormal	APO:0000222	chemical compound excretion
+APO:0000002	abnormal	APO:0000221	septum formation
+APO:0000003	decreased	APO:0000037	pheromone sensitivity
+APO:0000003	decreased	APO:0000141	critical cell size at START (G1 cell-size checkpoint)
+APO:0000003	decreased	APO:0000100	nutrient uptake
+APO:0000003	decreased	APO:0000025	axial budding pattern
+APO:0000117	normal	APO:0000100	nutrient uptake
+APO:0000002	abnormal	APO:0000214	position of spindle pole body
+APO:0000005	absent	APO:0000128	peroxisomal transport
+APO:0000005	absent	APO:0000074	autophagy
+APO:0000002	abnormal	APO:0000058	peroxisomal morphology
+APO:0000003	decreased	APO:0000039	meiosis
+APO:0000245	decreased rate	APO:0000100	nutrient uptake
+APO:0000245	decreased rate	APO:0000222	chemical compound excretion
+APO:0000002	abnormal	APO:0000057	nuclear morphology
+APO:0000002	abnormal	APO:0000271	RNA modification
+APO:0000005	absent	APO:0000058	peroxisomal morphology
+APO:0000245	decreased rate	APO:0000099	utilization of nitrogen source
+APO:0000004	increased	APO:0000047	transposable element transposition
+APO:0000002	abnormal	APO:0000223	mating projection morphology
+APO:0000004	increased	APO:0000225	mitotic recombination
+APO:0000005	absent	APO:0000239	pexophagy
+APO:0000004	increased	APO:0000335	size of nucleolus
+APO:0000004	increased	APO:0000100	nutrient uptake
+APO:0000002	abnormal	APO:0000032	mating response
+APO:0000004	increased	APO:0000074	autophagy
+APO:0000005	absent	APO:0000100	nutrient uptake
+APO:0000003	decreased	APO:0000240	mitophagy
+APO:0000003	decreased	APO:0000063	colony size
+APO:0000003	decreased	APO:0000126	nuclear import
+APO:0000004	increased	APO:0000222	chemical compound excretion
+APO:0000004	increased	APO:0000193	resistance to enzymatic treatment
+APO:0000003	decreased	APO:0000127	nuclear export
+APO:0000117	normal	APO:0000127	nuclear export
+APO:0000005	absent	APO:0000271	RNA modification
+APO:0000117	normal	APO:0000126	nuclear import
+APO:0000003	decreased	APO:0000046	silencing
+APO:0000117	normal	APO:0000081	killer toxin resistance
+APO:0000003	decreased	APO:0000159	biofilm formation
+APO:0000330	haploproficient		
+APO:0000002	abnormal	APO:0000132	RNA localization
+APO:0000003	decreased	APO:0000027	filamentous growth
+APO:0000117	normal	APO:0000225	mitotic recombination
+APO:0000117	normal	APO:0000046	silencing
+APO:0000002	abnormal	APO:0000024	budding
+APO:0000117	normal	APO:0000202	alkaline pH resistance
+APO:0000117	normal	APO:0000144	telomere length
+APO:0000003	decreased	APO:0000219	utilization of sulfur source
+APO:0000004	increased	APO:0000096	nutrient utilization
+APO:0000002	abnormal	APO:0000053	cell wall morphology
+APO:0000002	abnormal	APO:0000226	subcellular morphology
+APO:0000003	decreased	APO:0000276	prion formation
+APO:0000003	decreased	APO:0000334	innate thermotolerance
+APO:0000003	decreased	APO:0000308	fermentative growth
+APO:0000002	abnormal	APO:0000060	colony appearance
+APO:0000002	abnormal	APO:0000303	endomembrane system morphology
+APO:0000003	decreased	APO:0000221	septum formation
+APO:0000005	absent	APO:0000022	protein activity
+APO:0000002	abnormal	APO:0000044	sporulation efficiency
+APO:0000002	abnormal	APO:0000054	cytoskeleton morphology
+APO:0000002	abnormal	APO:0000299	vacuolar distribution
+APO:0000117	normal	APO:0000042	spore germination
+APO:0000002	abnormal	APO:0000046	silencing
+APO:0000004	increased	APO:0000086	X ray resistance
+APO:0000004	increased	APO:0000317	replicative lifespan
+APO:0000005	absent	APO:0000039	meiosis
+APO:0000003	decreased	APO:0000036	pheromone production
+APO:0000252	normal rate	APO:0000308	fermentative growth
+APO:0000117	normal	APO:0000055	mitochondrial morphology
+APO:0000252	normal rate	APO:0000309	respiratory growth
+APO:0000003	decreased	APO:0000198	mutation frequency
+APO:0000117	normal	APO:0000079	vacuolar transport
+APO:0000003	decreased	APO:0000266	cell cycle progression in S phase
+APO:0000003	decreased	APO:0000209	protein/peptide distribution
+APO:0000003	decreased	APO:0000024	budding
+APO:0000004	increased	APO:0000032	mating response
+APO:0000004	increased	APO:0000205	ionic stress resistance
+APO:0000003	decreased	APO:0000129	protein transport
+APO:0000004	increased	APO:0000104	mitochondrial rho- mutation frequency
+APO:0000045	sterile		
+APO:0000002	abnormal	APO:0000258	cell cycle progression in M phase
+APO:0000005	absent	APO:0000038	shmoo formation
+APO:0000002	abnormal	APO:0000255	cell cycle progression in G1 phase
+APO:0000004	increased	APO:0000026	bipolar budding pattern
+APO:0000004	increased	APO:0000036	pheromone production
+APO:0000005	absent	APO:0000037	pheromone sensitivity
+APO:0000002	abnormal	APO:0000089	budding index
+APO:0000117	normal	APO:0000214	position of spindle pole body
+APO:0000005	absent	APO:0000224	RNA accumulation
+APO:0000002	abnormal	APO:0000266	cell cycle progression in S phase
+APO:0000002	abnormal	APO:0000052	cell size
+APO:0000005	absent	APO:0000155	apoptosis
+APO:0000002	abnormal	APO:0000254	cell cycle progression in G2 phase
+APO:0000117	normal	APO:0000131	protein/peptide modification
+APO:0000248	increased duration	APO:0000266	cell cycle progression in S phase
+APO:0000004	increased	APO:0000040	meiotic recombination
+APO:0000004	increased	APO:0000312	cell death
+APO:0000249	delayed	APO:0000255	cell cycle progression in G1 phase
+APO:0000004	increased	APO:0000209	protein/peptide distribution
+APO:0000003	decreased	APO:0000071	cytokinesis
+APO:0000002	abnormal	APO:0000030	lifespan
+APO:0000250	arrested	APO:0000258	cell cycle progression in M phase
+APO:0000004	increased	APO:0000309	respiratory growth
+APO:0000249	delayed	APO:0000269	cell cycle progression through the G1/S phase transition
+APO:0000002	abnormal	APO:0000196	mating type switching
+APO:0000005	absent	APO:0000033	cell fusion
+APO:0000249	delayed	APO:0000264	cell cycle progression in metaphase
+APO:0000249	delayed	APO:0000258	cell cycle progression in M phase
+APO:0000117	normal	APO:0000204	hyperosmotic stress resistance
+APO:0000004	increased	APO:0000075	endocytosis
+APO:0000004	increased	APO:0000271	RNA modification
+APO:0000004	increased	APO:0000111	viability
+APO:0000117	normal	APO:0000051	cell shape
+APO:0000245	decreased rate	APO:0000026	bipolar budding pattern
+APO:0000002	abnormal	APO:0000035	nuclear fusion during mating
+APO:0000249	delayed	APO:0000224	RNA accumulation
+APO:0000005	absent	APO:0000095	chemical compound accumulation
+APO:0000004	increased	APO:0000098	utilization of carbon source
+APO:0000003	decreased	APO:0000309	respiratory growth
+APO:0000004	increased	APO:0000240	mitophagy
+APO:0000245	decreased rate	APO:0000098	utilization of carbon source
+APO:0000252	normal rate	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000004	increased	APO:0000337	polyploidy
+APO:0000117	normal	APO:0000022	protein activity
+APO:0000003	decreased	APO:0000271	RNA modification
+APO:0000249	delayed	APO:0000079	vacuolar transport
+APO:0000249	delayed	APO:0000075	endocytosis
+APO:0000002	abnormal	APO:0000270	endoplasmic reticulum morphology
+APO:0000004	increased	APO:0000204	hyperosmotic stress resistance
+APO:0000117	normal	APO:0000047	transposable element transposition
+APO:0000245	decreased rate	APO:0000076	mitochondrial transport
+APO:0000003	decreased	APO:0000327	hydrostatic pressure resistance
+APO:0000003	decreased	APO:0000155	apoptosis
+APO:0000004	increased	APO:0000255	cell cycle progression in G1 phase
+APO:0000249	delayed	APO:0000040	meiotic recombination
+APO:0000249	delayed	APO:0000039	meiosis
+APO:0000004	increased	APO:0000101	fermentative metabolism
+APO:0000249	delayed	APO:0000209	protein/peptide distribution
+APO:0000249	delayed	APO:0000259	cell cycle passage through the metaphase-anaphase transition
+APO:0000004	increased	APO:0000277	prion loss
+APO:0000246	increased rate	APO:0000098	utilization of carbon source
+APO:0000005	absent	APO:0000026	bipolar budding pattern
+APO:0000002	abnormal	APO:0000218	redox state
+APO:0000003	decreased	APO:0000026	bipolar budding pattern
+APO:0000246	increased rate	APO:0000123	recovery from pheromone-induced cell cycle arrest
+APO:0000002	abnormal	APO:0000273	nucleolar morphology
+APO:0000245	decreased rate	APO:0000224	RNA accumulation
+APO:0000004	increased	APO:0000276	prion formation
+APO:0000245	decreased rate	APO:0000095	chemical compound accumulation
+APO:0000117	normal	APO:0000027	filamentous growth
+APO:0000003	decreased	APO:0000076	mitochondrial transport
+APO:0000002	abnormal	APO:0000062	colony shape
+APO:0000005	absent	APO:0000154	petite-negative
+APO:0000002	abnormal	APO:0000224	RNA accumulation
+APO:0000248	increased duration	APO:0000255	cell cycle progression in G1 phase
+APO:0000250	arrested	APO:0000106	vegetative growth
+APO:0000246	increased rate	APO:0000225	mitotic recombination
+APO:0000117	normal	APO:0000083	oxidative stress resistance
+APO:0000245	decreased rate	APO:0000079	vacuolar transport
+APO:0000005	absent	APO:0000035	nuclear fusion during mating
+APO:0000005	absent	APO:0000075	endocytosis
+APO:0000004	increased	APO:0000145	oxidative phosphorylation
+APO:0000003	decreased	APO:0000241	freeze-thaw resistance
+APO:0000005	absent	APO:0000240	mitophagy
+APO:0000117	normal	APO:0000044	sporulation efficiency
+APO:0000004	increased	APO:0000048	virulence
+APO:0000250	arrested	APO:0000266	cell cycle progression in S phase
+APO:0000004	increased	APO:0000044	sporulation efficiency
+APO:0000117	normal	APO:0000086	X ray resistance
+APO:0000005	absent	APO:0000086	X ray resistance
+APO:0000117	normal	APO:0000224	RNA accumulation
+APO:0000004	increased	APO:0000202	alkaline pH resistance
+APO:0000005	absent	APO:0000046	silencing
+APO:0000117	normal	APO:0000091	starvation resistance
+APO:0000004	increased	APO:0000326	desiccation resistance
+APO:0000003	decreased	APO:0000033	cell fusion
+APO:0000002	abnormal	APO:0000127	nuclear export
+APO:0000251	premature	APO:0000039	meiosis
+APO:0000246	increased rate	APO:0000222	chemical compound excretion
+APO:0000002	abnormal	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000250	arrested	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000117	normal	APO:0000149	protein/peptide accumulation
+APO:0000248	increased duration	APO:0000254	cell cycle progression in G2 phase
+APO:0000004	increased	APO:0000037	pheromone sensitivity
+APO:0000117	normal	APO:0000124	pheromone-induced cell cycle arrest
+APO:0000117	normal	APO:0000029	pseudohyphal growth
+APO:0000117	normal	APO:0000074	autophagy
+APO:0000117	normal	APO:0000239	pexophagy
+APO:0000003	decreased	APO:0000132	RNA localization
+APO:0000002	abnormal	APO:0000040	meiotic recombination
+APO:0000004	increased	APO:0000041	sporulation
+APO:0000250	arrested	APO:0000254	cell cycle progression in G2 phase
+APO:0000249	delayed	APO:0000071	cytokinesis
+APO:0000117	normal	APO:0000253	cell cycle progression
+APO:0000250	arrested	APO:0000264	cell cycle progression in metaphase
+APO:0000247	decreased duration	APO:0000255	cell cycle progression in G1 phase
+APO:0000249	delayed	APO:0000262	cell cycle progression in mid anaphase
+APO:0000250	arrested	APO:0000259	cell cycle passage through the metaphase-anaphase transition
+APO:0000002	abnormal	APO:0000260	cell cycle progression in anaphase
+APO:0000002	abnormal	APO:0000036	pheromone production
+APO:0000117	normal	APO:0000110	competitive fitness
+APO:0000005	absent	APO:0000267	entry into G0 (stationary phase)
+APO:0000251	premature	APO:0000075	endocytosis
+APO:0000005	absent	APO:0000024	budding
+APO:0000249	delayed	APO:0000260	cell cycle progression in anaphase
+APO:0000248	increased duration	APO:0000260	cell cycle progression in anaphase
+APO:0000117	normal	APO:0000040	meiotic recombination
+APO:0000246	increased rate	APO:0000041	sporulation
+APO:0000002	abnormal	APO:0000098	utilization of carbon source
+APO:0000004	increased	APO:0000034	mating efficiency
+APO:0000246	increased rate	APO:0000038	shmoo formation
+APO:0000004	increased	APO:0000123	recovery from pheromone-induced cell cycle arrest
+APO:0000249	delayed	APO:0000022	protein activity
+APO:0000249	delayed	APO:0000041	sporulation
+APO:0000003	decreased	APO:0000123	recovery from pheromone-induced cell cycle arrest
+APO:0000251	premature	APO:0000269	cell cycle progression through the G1/S phase transition
+APO:0000003	decreased	APO:0000220	necrotic cell death
+APO:0000005	absent	APO:0000027	filamentous growth
+APO:0000246	increased rate	APO:0000047	transposable element transposition
+APO:0000003	decreased	APO:0000222	chemical compound excretion
+APO:0000117	normal	APO:0000310	growth in exponential phase
+APO:0000003	decreased	APO:0000335	size of nucleolus
+APO:0000246	increased rate	APO:0000224	RNA accumulation
+APO:0000249	delayed	APO:0000266	cell cycle progression in S phase
+APO:0000002	abnormal	APO:0000042	spore germination
+APO:0000246	increased rate	APO:0000129	protein transport
+APO:0000003	decreased	APO:0000147	heat sensitivity
+APO:0000250	arrested	APO:0000039	meiosis
+APO:0000002	abnormal	APO:0000302	vesicle distribution
+APO:0000004	increased	APO:0000143	chromosome/plasmid maintenance
+APO:0000249	delayed	APO:0000253	cell cycle progression
+APO:0000005	absent	APO:0000065	flocculation
+APO:0000004	increased	APO:0000241	freeze-thaw resistance
+APO:0000251	premature	APO:0000208	chromosome segregation
+APO:0000249	delayed	APO:0000024	budding
+APO:0000005	absent	APO:0000307	anaerobic growth
+APO:0000245	decreased rate	APO:0000254	cell cycle progression in G2 phase
+APO:0000004	increased	APO:0000119	size of nucleus
+APO:0000003	decreased	APO:0000119	size of nucleus
+APO:0000246	increased rate	APO:0000255	cell cycle progression in G1 phase
+APO:0000003	decreased	APO:0000310	growth in exponential phase
+APO:0000117	normal	APO:0000098	utilization of carbon source
+APO:0000005	absent	APO:0000149	protein/peptide accumulation
+APO:0000003	decreased	APO:0000101	fermentative metabolism
+APO:0000246	increased rate	APO:0000269	cell cycle progression through the G1/S phase transition
+APO:0000246	increased rate	APO:0000131	protein/peptide modification
+APO:0000002	abnormal	APO:0000267	entry into G0 (stationary phase)
+APO:0000003	decreased	APO:0000239	pexophagy
+APO:0000005	absent	APO:0000059	vacuolar morphology
+APO:0000002	abnormal	APO:0000144	telomere length
+APO:0000005	absent	APO:0000312	cell death
+APO:0000245	decreased rate	APO:0000271	RNA modification
+APO:0000002	abnormal	APO:0000037	pheromone sensitivity
+APO:0000246	increased rate	APO:0000253	cell cycle progression
+APO:0000117	normal	APO:0000317	replicative lifespan
+APO:0000246	increased rate	APO:0000095	chemical compound accumulation
+APO:0000249	delayed	APO:0000098	utilization of carbon source
+APO:0000117	normal	APO:0000123	recovery from pheromone-induced cell cycle arrest
+APO:0000005	absent	APO:0000326	desiccation resistance
+APO:0000003	decreased	APO:0000035	nuclear fusion during mating
+APO:0000002	abnormal	APO:0000298	peroxisomal distribution
+APO:0000246	increased rate	APO:0000130	small molecule transport
+APO:0000117	normal	APO:0000277	prion loss
+APO:0000002	abnormal	APO:0000027	filamentous growth
+APO:0000002	abnormal	APO:0000315	plasma membrane morphology
+APO:0000245	decreased rate	APO:0000130	small molecule transport
+APO:0000002	abnormal	APO:0000099	utilization of nitrogen source
+APO:0000117	normal	APO:0000309	respiratory growth
+APO:0000117	normal	APO:0000143	chromosome/plasmid maintenance
+APO:0000002	abnormal	APO:0000243	Golgi morphology
+APO:0000246	increased rate	APO:0000106	vegetative growth
+APO:0000246	increased rate	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000002	abnormal	APO:0000297	mitochondrial distribution
+APO:0000117	normal	APO:0000025	axial budding pattern
+APO:0000002	abnormal	APO:0000047	transposable element transposition
+APO:0000245	decreased rate	APO:0000024	budding
+APO:0000245	decreased rate	APO:0000102	respiratory metabolism
+APO:0000005	absent	APO:0000040	meiotic recombination
+APO:0000249	delayed	APO:0000239	pexophagy
+APO:0000004	increased	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000043	spore wall formation		
+APO:0000005	absent	APO:0000078	protein secretion
+APO:0000245	decreased rate	APO:0000074	autophagy
+APO:0000245	decreased rate	APO:0000239	pexophagy
+APO:0000003	decreased	APO:0000258	cell cycle progression in M phase
+APO:0000117	normal	APO:0000212	bud morphology
+APO:0000003	decreased	APO:0000145	oxidative phosphorylation
+APO:0000245	decreased rate	APO:0000143	chromosome/plasmid maintenance
+APO:0000004	increased	APO:0000308	fermentative growth
+APO:0000005	absent	APO:0000308	fermentative growth
+APO:0000250	arrested	APO:0000269	cell cycle progression through the G1/S phase transition
+APO:0000003	decreased	APO:0000277	prion loss
+APO:0000117	normal	APO:0000032	mating response
+APO:0000245	decreased rate	APO:0000225	mitotic recombination
+APO:0000245	decreased rate	APO:0000087	resistance to chemicals
+APO:0000005	absent	APO:0000196	mating type switching
+APO:0000117	normal	APO:0000034	mating efficiency
+APO:0000003	decreased	APO:0000339	ribophagy
+APO:0000005	absent	APO:0000213	spindle morphology
+APO:0000003	decreased	APO:0000194	ionizing radiation resistance
+APO:0000004	increased	APO:0000310	growth in exponential phase
+APO:0000004	increased	APO:0000239	pexophagy
+APO:0000249	delayed	APO:0000074	autophagy
+APO:0000245	decreased rate	APO:0000071	cytokinesis
+APO:0000246	increased rate	APO:0000308	fermentative growth
+APO:0000245	decreased rate	APO:0000253	cell cycle progression
+APO:0000249	delayed	APO:0000131	protein/peptide modification
+APO:0000245	decreased rate	APO:0000075	endocytosis
+APO:0000004	increased	APO:0000288	adhesion
+APO:0000004	increased	APO:0000195	gamma ray resistance
+APO:0000245	decreased rate	APO:0000131	protein/peptide modification
+APO:0000117	normal	APO:0000064	liquid culture appearance
+APO:0000004	increased	APO:0000079	vacuolar transport
+APO:0000003	decreased	APO:0000299	vacuolar distribution
+APO:0000004	increased	APO:0000201	acid pH resistance
+APO:0000002	abnormal	APO:0000076	mitochondrial transport
+APO:0000245	decreased rate	APO:0000101	fermentative metabolism
+APO:0000249	delayed	APO:0000101	fermentative metabolism
+APO:0000004	increased	APO:0000336	aneuploidy
+APO:0000004	increased	APO:0000267	entry into G0 (stationary phase)
+APO:0000003	decreased	APO:0000267	entry into G0 (stationary phase)
+APO:0000245	decreased rate	APO:0000092	temperature sensitive growth
+APO:0000245	decreased rate	APO:0000038	shmoo formation
+APO:0000249	delayed	APO:0000035	nuclear fusion during mating
+APO:0000002	abnormal	APO:0000300	endoplasmic reticulum distribution
+APO:0000002	abnormal	APO:0000317	replicative lifespan
+APO:0000003	decreased	APO:0000288	adhesion
+APO:0000117	normal	APO:0000255	cell cycle progression in G1 phase
+APO:0000005	absent	APO:0000159	biofilm formation
+APO:0000117	normal	APO:0000198	mutation frequency
+APO:0000003	decreased	APO:0000208	chromosome segregation
+APO:0000246	increased rate	APO:0000100	nutrient uptake
+APO:0000117	normal	APO:0000316	chronological lifespan
+APO:0000002	abnormal	APO:0000033	cell fusion
+APO:0000117	normal	APO:0000240	mitophagy
+APO:0000002	abnormal	APO:0000198	mutation frequency
+APO:0000250	arrested	APO:0000072	mitotic cell cycle
+APO:0000247	decreased duration	APO:0000266	cell cycle progression in S phase
+APO:0000247	decreased duration	APO:0000254	cell cycle progression in G2 phase
+APO:0000005	absent	APO:0000253	cell cycle progression
+APO:0000002	abnormal	APO:0000159	biofilm formation
+APO:0000003	decreased	APO:0000203	hypoosmotic stress resistance
+APO:0000003	decreased	APO:0000269	cell cycle progression through the G1/S phase transition
+APO:0000005	absent	APO:0000130	small molecule transport
+APO:0000117	normal	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000117	normal	APO:0000201	acid pH resistance
+APO:0000002	abnormal	APO:0000026	bipolar budding pattern
+APO:0000003	decreased	APO:0000065	flocculation
+APO:0000003	decreased	APO:0000253	cell cycle progression
+APO:0000249	delayed	APO:0000310	growth in exponential phase
+APO:0000003	decreased	APO:0000300	endoplasmic reticulum distribution
+APO:0000004	increased	APO:0000301	Golgi distribution
+APO:0000117	normal	APO:0000111	viability
+APO:0000117	normal	APO:0000050	cellular morphology
+APO:0000117	normal	APO:0000333	acquired thermotolerance
+APO:0000117	normal	APO:0000060	colony appearance
+APO:0000005	absent	APO:0000215	toxin resistance
+APO:0000248	increased duration	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000117	normal	APO:0000109	survival rate in stationary phase
+APO:0000251	premature	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000249	delayed	APO:0000129	protein transport
+APO:0000246	increased rate	APO:0000337	polyploidy
+APO:0000250	arrested	APO:0000265	cell cycle progression in telophase
+APO:0000005	absent	APO:0000208	chromosome segregation
+APO:0000005	absent	APO:0000342	late nucleophagy
+APO:0000245	decreased rate	APO:0000042	spore germination
+APO:0000003	decreased	APO:0000341	nucleophagy
+APO:0000003	decreased	APO:0000340	reticulophagy
+APO:0000249	delayed	APO:0000149	protein/peptide accumulation
+APO:0000249	delayed	APO:0000265	cell cycle progression in telophase
+APO:0000002	abnormal	APO:0000065	flocculation
+APO:0000003	decreased	APO:0000197	colony sectoring
+APO:0000002	abnormal	APO:0000130	small molecule transport
+APO:0000249	delayed	APO:0000268	exit from G0 (stationary phase)
+APO:0000249	delayed	APO:0000309	respiratory growth
+APO:0000249	delayed	APO:0000123	recovery from pheromone-induced cell cycle arrest
+APO:0000245	decreased rate	APO:0000149	protein/peptide accumulation
+APO:0000002	abnormal	APO:0000029	pseudohyphal growth
+APO:0000005	absent	APO:0000129	protein transport
+APO:0000251	premature	APO:0000131	protein/peptide modification
+APO:0000076	mitochondrial transport		
+APO:0000149	protein/peptide accumulation		
+APO:0000003	decreased	APO:0000218	redox state
+APO:0000005	absent	APO:0000340	reticulophagy
+APO:0000246	increased rate	APO:0000102	respiratory metabolism
+APO:0000004	increased	APO:0000216	fitness
+APO:0000246	increased rate	APO:0000198	mutation frequency
+APO:0000005	absent	APO:0000198	mutation frequency
+APO:0000004	increased	APO:0000093	thermotolerance
+APO:0000004	increased	APO:0000129	protein transport
+APO:0000005	absent	APO:0000085	UV resistance
+APO:0000002	abnormal	APO:0000301	Golgi distribution
+APO:0000249	delayed	APO:0000106	vegetative growth
+APO:0000002	abnormal	APO:0000336	aneuploidy
+APO:0000249	delayed	APO:0000256	cell cycle passage through START
+APO:0000005	absent	APO:0000221	septum formation
+APO:0000310	growth in exponential phase		
+APO:0000251	premature	APO:0000260	cell cycle progression in anaphase
+APO:0000250	arrested	APO:0000310	growth in exponential phase
+APO:0000005	absent	APO:0000061	colony color
+APO:0000005	absent	APO:0000082	osmotic stress resistance
+APO:0000245	decreased rate	APO:0000312	cell death
+APO:0000248	increased duration	APO:0000131	protein/peptide modification
+APO:0000003	decreased	APO:0000084	radiation resistance
+APO:0000002	abnormal	APO:0000274	prion state
+APO:0000246	increased rate	APO:0000312	cell death
+APO:0000249	delayed	APO:0000254	cell cycle progression in G2 phase
+APO:0000003	decreased	APO:0000104	mitochondrial rho- mutation frequency
+APO:0000002	abnormal	APO:0000341	nucleophagy
+APO:0000250	arrested	APO:0000256	cell cycle passage through START
+APO:0000248	increased duration	APO:0000269	cell cycle progression through the G1/S phase transition
+APO:0000251	premature	APO:0000155	apoptosis
+APO:0000249	delayed	APO:0000072	mitotic cell cycle
+APO:0000005	absent	APO:0000204	hyperosmotic stress resistance
+APO:0000117	normal	APO:0000038	shmoo formation
+APO:0000117	normal	APO:0000155	apoptosis
+APO:0000117	normal	APO:0000065	flocculation
+APO:0000005	absent	APO:0000036	pheromone production
+APO:0000117	normal	APO:0000036	pheromone production
+APO:0000005	absent	APO:0000034	mating efficiency
+APO:0000117	normal	APO:0000062	colony shape
+APO:0000117	normal	APO:0000076	mitochondrial transport
+APO:0000005	absent	APO:0000044	sporulation efficiency
+APO:0000005	absent	APO:0000223	mating projection morphology
+APO:0000002	abnormal	APO:0000124	pheromone-induced cell cycle arrest
+APO:0000117	normal	APO:0000105	mitochondrial genome maintenance
+APO:0000117	normal	APO:0000215	toxin resistance
+APO:0000002	abnormal	APO:0000022	protein activity
+APO:0000245	decreased rate	APO:0000025	axial budding pattern
+APO:0000245	decreased rate	APO:0000266	cell cycle progression in S phase
+APO:0000117	normal	APO:0000270	endoplasmic reticulum morphology
+APO:0000002	abnormal	APO:0000269	cell cycle progression through the G1/S phase transition
+APO:0000117	normal	APO:0000075	endocytosis
+APO:0000003	decreased	APO:0000275	prion inheritance
+APO:0000250	arrested	APO:0000263	cell cycle progression in late anaphase
+APO:0000117	normal	APO:0000120	actin cytoskeleton morphology
+APO:0000117	normal	APO:0000256	cell cycle passage through START
+APO:0000246	increased rate	APO:0000256	cell cycle passage through START
+APO:0000004	increased	APO:0000105	mitochondrial genome maintenance
+APO:0000117	normal	APO:0000039	meiosis
+APO:0000005	absent	APO:0000310	growth in exponential phase
+APO:0000005	absent	APO:0000269	cell cycle progression through the G1/S phase transition
+APO:0000252	normal rate	APO:0000143	chromosome/plasmid maintenance
+APO:0000002	abnormal	APO:0000225	mitotic recombination
+APO:0000117	normal	APO:0000196	mating type switching
+APO:0000117	normal	APO:0000208	chromosome segregation
+APO:0000249	delayed	APO:0000208	chromosome segregation
+APO:0000003	decreased	APO:0000073	intracellular transport
+APO:0000002	abnormal	APO:0000126	nuclear import
+APO:0000245	decreased rate	APO:0000126	nuclear import
+APO:0000248	increased duration	APO:0000209	protein/peptide distribution
+APO:0000003	decreased	APO:0000257	cell cycle progression through the G2/M phase transition
+APO:0000005	absent	APO:0000288	adhesion
+APO:0000248	increased duration	APO:0000258	cell cycle progression in M phase
+APO:0000252	normal rate	APO:0000106	vegetative growth
+APO:0000005	absent	APO:0000275	prion inheritance
+APO:0000005	absent	APO:0000277	prion loss
+APO:0000251	premature	APO:0000264	cell cycle progression in metaphase
+APO:0000251	premature	APO:0000265	cell cycle progression in telophase
+APO:0000002	abnormal	APO:0000063	colony size
+APO:0000005	absent	APO:0000126	nuclear import
+APO:0000246	increased rate	APO:0000258	cell cycle progression in M phase
+APO:0000005	absent	APO:0000225	mitotic recombination
+APO:0000005	absent	APO:0000202	alkaline pH resistance
+APO:0000005	absent	APO:0000334	innate thermotolerance
+APO:0000245	decreased rate	APO:0000022	protein activity
+APO:0000003	decreased	APO:0000212	bud morphology
+APO:0000250	arrested	APO:0000260	cell cycle progression in anaphase
+APO:0000002	abnormal	APO:0000240	mitophagy
+APO:0000004	increased	APO:0000154	petite-negative
+APO:0000250	arrested	APO:0000054	cytoskeleton morphology
+APO:0000002	abnormal	APO:0000101	fermentative metabolism
+APO:0000004	increased	APO:0000024	budding
+APO:0000247	decreased duration	APO:0000074	autophagy
+APO:0000248	increased duration	APO:0000074	autophagy
+APO:0000004	increased	APO:0000327	hydrostatic pressure resistance
+APO:0000004	increased	APO:0000099	utilization of nitrogen source
+APO:0000004	increased	APO:0000275	prion inheritance
+APO:0000246	increased rate	APO:0000267	entry into G0 (stationary phase)
+APO:0000005	absent	APO:0000079	vacuolar transport
+APO:0000002	abnormal	APO:0000276	prion formation
+APO:0000002	abnormal	APO:0000275	prion inheritance
+APO:0000249	delayed	APO:0000043	spore wall formation
+APO:0000249	delayed	APO:0000087	resistance to chemicals
+APO:0000005	absent	APO:0000338	micronucleophagy
+APO:0000005	absent	APO:0000327	hydrostatic pressure resistance
+APO:0000246	increased rate	APO:0000266	cell cycle progression in S phase
+APO:0000005	absent	APO:0000101	fermentative metabolism
+APO:0000004	increased	APO:0000126	nuclear import
+APO:0000249	delayed	APO:0000240	mitophagy
+APO:0000249	delayed	APO:0000078	protein secretion
+APO:0000246	increased rate	APO:0000149	protein/peptide accumulation
+APO:0000248	increased duration	APO:0000264	cell cycle progression in metaphase
+APO:0000251	premature	APO:0000259	cell cycle passage through the metaphase-anaphase transition
+APO:0000246	increased rate	APO:0000155	apoptosis

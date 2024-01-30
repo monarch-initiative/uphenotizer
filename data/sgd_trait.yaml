@@ -1,0 +1,20 @@
+pattern_name: sgd_trait
+pattern_iri: http://purl.oboibrary.org/obo/monarch/patterns/sgd_trait
+description: Trait-based phenotypes in SGD
+
+classes:
+  abnormal: PATO:0000460
+  trait: owl:Thing # OBA / PATO
+
+relations:
+  inheres_in: RO:0000052
+  qualifier: RO:0002573
+  has_part: BFO:0000051
+
+vars:
+  trait: "'trait'"
+
+equivalentTo:
+  text: "'has_part' some (%s and ('qualifier' some 'abnormal'))"
+  vars:
+    - trait
