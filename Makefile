@@ -1,4 +1,5 @@
 
+# TODO replace with SGD & FB phneotype file downloads
 ALLIANCE_URL = http://www.alliancegenome.org/downloads/alliance.ttl.gz
 PATTERNDIR = dosdp_data
 
