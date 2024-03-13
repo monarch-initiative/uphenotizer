@@ -46,15 +46,16 @@ def export_flybase_fbbt_phenotypes():
         upheno_counter += 1
         new_upheno_mappings.append(Mapping(anatomy_id=index, upheno_id=upheno_id))
 
-    # convert list of pydantic instances to dataframe
-    new_upheno_mappings_df = pd.DataFrame([m.dict() for m in new_upheno_mappings])
-    new_upheno_mappings_df = populate_upheno_id_number_column(new_upheno_mappings_df)
+    # If new mappings are found, save then
+    if len(new_upheno_mappings) > 0:
+        new_upheno_mappings_df = pd.DataFrame([m.dict() for m in new_upheno_mappings])
+        new_upheno_mappings_df = populate_upheno_id_number_column(new_upheno_mappings_df)
 
-    # merge new upheno mappings with existing upheno mappings
-    merged_upheno_mappings_df = pd.concat([existing_upheno_mappings_df, new_upheno_mappings_df], ignore_index=True)
+        # merge new upheno mappings with existing upheno mappings
+        merged_upheno_mappings_df = pd.concat([existing_upheno_mappings_df, new_upheno_mappings_df], ignore_index=True)
 
-    # save new dataframe to tsv file
-    save_upheno_mappings(merged_upheno_mappings_df)
+        # save new dataframe to tsv file
+        save_upheno_mappings(merged_upheno_mappings_df)
 
 
 # starting ID, UPHENO:8 000 000   max ID UPHENO:8100000  raise ValueError above

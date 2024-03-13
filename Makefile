@@ -1,6 +1,6 @@
 
 # TODO replace with SGD & FB phneotype file downloads
-ALLIANCE_URL = http://www.alliancegenome.org/downloads/alliance.ttl.gz
+ALLIANCE_FB_URL = https://fms.alliancegenome.org/download/PHENOTYPE_FB.json.gz
 PATTERNDIR = dosdp_data
 
 #############################
@@ -17,11 +17,11 @@ all:
 ### Alliance Data ###########
 #############################
 
-alliance_phenotypes.json.gz: .FORCE
-	wget $(ALLIANCE_URL) -O 
+PHENOTYPE_FB.json.gz:
+	wget $(ALLIANCE_FB_URL) -O
 
-alliance_phenotypes.json:  alliance_phenotypes.json.gz
-	gunzip -c $< | python3 scripts/extract_flybase_fbbt_phenotypes.py > $@
+PHENOTYPE_FB.json:  PHENOTYPE_FB.json.gz
+	gunzip $<
 
 #############################
 ### Ontology Dependencies ###
@@ -41,9 +41,9 @@ data/merged.owl: $(foreach n,$(SOURCES), data/$(n).owl)
 
 # Takes as an input the alliance_phenotypes.json file and 
 # generates one ore more DOSDP TSV files
-flybase_fbbt_phenotypes: alliance_phenotypes.json.gz
+flybase_fbbt_phenotypes: PHENOTYPE_FB.json
 	mkdir -p $(PATTERNDIR)
-	python3 scripts/extract_flybase_fbbt_phenotypes.py $< $(PATTERNDIR)
+	python3 scripts/extract_flybase_fbbt_phenotypes.py
 
 # Takes as an input the alliance_phenotypes.json file and 
 # generates one ore more DOSDP TSV files
