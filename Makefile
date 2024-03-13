@@ -47,6 +47,21 @@ flybase_fbbt_phenotypes: PHENOTYPE_FB.json
 
 # Takes as an input the alliance_phenotypes.json file and 
 # generates one ore more DOSDP TSV files
+
+APO_OBA_URL=https://docs.google.com/spreadsheets/d/e/2PACX-1vSsKbr0TJHfigCvG1RNQgybZrSl3Eh8DRLpnQR-51bFe0Stxt7DdBKBF6E4SQ6NPqJr82UTFZmjindF/pub?gid=0&single=true&output=tsv
+data/apo_oba.sssom.tsv: 
+	wget "$(APO_OBA_URL)" -O $@
+
+APO_GO_URL=https://docs.google.com/spreadsheets/d/e/2PACX-1vSsKbr0TJHfigCvG1RNQgybZrSl3Eh8DRLpnQR-51bFe0Stxt7DdBKBF6E4SQ6NPqJr82UTFZmjindF/pub?gid=575540781&single=true&output=tsv
+data/apo_go.sssom.tsv: 
+	wget "$(APO_GO_URL)" -O $@
+
+APO_PATO_URL=https://docs.google.com/spreadsheets/d/e/2PACX-1vSsKbr0TJHfigCvG1RNQgybZrSl3Eh8DRLpnQR-51bFe0Stxt7DdBKBF6E4SQ6NPqJr82UTFZmjindF/pub?gid=1739417682&single=true&output=tsv
+data/apo_pato.sssom.tsv: 
+	wget "$(APO_PATO_URL)" -O $@
+
+download_mappings: data/apo_oba.sssom.tsv data/apo_go.sssom.tsv data/apo_pato.sssom.tsv
+
 sgd_phenotypes: alliance_phenotypes.json.gz
 	mkdir -p $(PATTERNDIR)
 	python3 scripts/extract_sgd_phenotypes.py $< $(PATTERNDIR)

@@ -1,0 +1,99 @@
+subject_id	subject_label	predicate_id	object_id	object_label	comment
+APO:0000193	resistance to enzymatic treatment	skos:exactMatch			
+APO:0000050	cellular morphology	skos:exactMatch			
+APO:0000051	cell shape	skos:exactMatch			
+APO:0000052	cell size	skos:exactMatch	OBA:0000055	cell size	
+APO:0000053	cell wall morphology	skos:exactMatch			
+APO:0000054	cytoskeleton morphology	skos:exactMatch	OBA:1000013	cytoskeleton morphology	
+APO:0000055	mitochondrial morphology	skos:exactMatch			
+APO:0000056	bud neck morphology	skos:exactMatch			
+APO:0000057	nuclear morphology	skos:exactMatch			
+APO:0000058	peroxisomal morphology	skos:exactMatch			
+APO:0000059	vacuolar morphology	skos:exactMatch			
+APO:0000060	colony appearance	skos:exactMatch			
+APO:0000061	colony color	skos:exactMatch			
+APO:0000062	colony shape	skos:exactMatch			
+APO:0000063	colony size	skos:exactMatch			
+APO:0000064	liquid culture appearance	skos:exactMatch			
+APO:0000089	budding index	skos:exactMatch			
+APO:0000118	nuclear position	skos:exactMatch			
+APO:0000119	size of nucleus	skos:exactMatch	OBA:0000117	nuclear size	
+APO:0000120	actin cytoskeleton morphology	skos:exactMatch			
+APO:0000144	telomere length	skos:exactMatch			
+APO:0000197	colony sectoring	skos:exactMatch			
+APO:0000200	budding pattern	skos:exactMatch			
+APO:0000212	bud morphology	skos:exactMatch			
+APO:0000213	spindle morphology	skos:exactMatch			
+APO:0000214	position of spindle pole body	skos:exactMatch			
+APO:0000223	mating projection morphology	skos:exactMatch			
+APO:0000226	subcellular morphology	skos:exactMatch			
+APO:0000243	Golgi morphology	skos:exactMatch			
+APO:0000270	endoplasmic reticulum morphology	skos:exactMatch			
+APO:0000273	nucleolar morphology	skos:exactMatch			
+APO:0000335	size of nucleolus	skos:exactMatch			
+APO:0000025	axial budding pattern	skos:exactMatch			
+APO:0000026	bipolar budding pattern	skos:exactMatch			
+APO:0000044	sporulation efficiency	skos:exactMatch			
+APO:0000111	viability	skos:exactMatch			
+APO:0000336	aneuploidy	skos:exactMatch			
+APO:0000337	polyploidy	skos:exactMatch			
+APO:0000048	virulence	skos:exactMatch			
+APO:0000216	fitness	skos:exactMatch			
+APO:0000218	redox state	skos:exactMatch			
+APO:0000297	mitochondrial distribution	skos:exactMatch			
+APO:0000298	peroxisomal distribution	skos:exactMatch			
+APO:0000299	vacuolar distribution	skos:exactMatch			
+APO:0000300	endoplasmic reticulum distribution	skos:exactMatch			
+APO:0000301	Golgi distribution	skos:exactMatch			
+APO:0000302	vesicle distribution	skos:exactMatch			
+APO:0000327	hydrostatic pressure resistance	skos:exactMatch			
+APO:0000034	mating efficiency	skos:exactMatch			
+APO:0000104	mitochondrial rho mutation frequency	skos:exactMatch			
+APO:0000110	competitive fitness	skos:exactMatch			
+APO:0000147	heat sensitivity	skos:exactMatch			
+APO:0000148	cold sensitivity	skos:exactMatch			
+APO:0000154	petite-negative	skos:exactMatch			
+APO:0000194	ionizing radiation resistance	skos:exactMatch			
+APO:0000195	gamma ray resistance	skos:exactMatch			
+APO:0000198	mutation frequency	skos:exactMatch			
+APO:0000315	plasma membrane morphology	skos:exactMatch			
+APO:0000326	desiccation resistance	skos:exactMatch			
+APO:0000241	freeze-thaw resistance	skos:exactMatch			
+APO:0000242	lipid particle morphology	skos:exactMatch			
+APO:0000303	endomembrane system morphology	skos:exactMatch			
+APO:0000316	chronological lifespan	skos:exactMatch			
+APO:0000317	replicative lifespan	skos:exactMatch			
+APO:0000307	anaerobic growth	skos:exactMatch			
+APO:0000308	fermentative growth	skos:exactMatch			
+APO:0000309	respiratory growth	skos:exactMatch			
+APO:0000095	chemical compound accumulation	skos:exactMatch			
+APO:0000109	survival rate in stationary phase	skos:exactMatch			
+APO:0000141	critical cell size at START (G1 cellsize checkpoint)	skos:exactMatch			
+APO:0000209	protein/peptide distribution	skos:exactMatch			
+APO:0000215	toxin resistance	skos:exactMatch			
+APO:0000030	lifespan	skos:exactMatch			
+APO:0000149	protein/peptide accumulation	skos:exactMatch			
+APO:0000224	RNA accumulation	skos:exactMatch			
+APO:0000274	prion state	skos:exactMatch			
+APO:0000201	acid pH resistance	skos:exactMatch			
+APO:0000202	alkaline pH resistance	skos:exactMatch			
+APO:0000203	hypoosmotic stress resistance	skos:exactMatch			
+APO:0000204	hyperosmotic stress resistance	skos:exactMatch			
+APO:0000205	ionic stress resistance	skos:exactMatch			
+APO:0000080	stress resistance	skos:exactMatch			
+APO:0000081	killer toxin resistance	skos:exactMatch			
+APO:0000082	osmotic stress resistance	skos:exactMatch			
+APO:0000083	oxidative stress resistance	skos:exactMatch			
+APO:0000084	radiation resistance	skos:exactMatch			
+APO:0000085	UV resistance	skos:exactMatch			
+APO:0000086	X ray resistance	skos:exactMatch			
+APO:0000032	resistance to chemicals	skos:exactMatch			
+APO:0000090	metal resistance	skos:exactMatch			
+APO:0000091	starvation resistance	skos:exactMatch			
+APO:0000092	temperature sensitive growth	skos:exactMatch			
+APO:0000093	thermotolerance	skos:exactMatch			
+APO:0000333	acquired thermotolerance	skos:exactMatch			
+APO:0000334	innate thermotolerance	skos:exactMatch			
+APO:0000199	chitin deposition	skos:exactMatch			
+APO:0000106	vegetative growth	skos:exactMatch			
+APO:0000310	growth in exponential phase	skos:exactMatch			
