@@ -1,6 +1,7 @@
 
 # TODO replace with SGD & FB phneotype file downloads
 ALLIANCE_FB_URL = https://fms.alliancegenome.org/download/PHENOTYPE_FB.json.gz
+ALLIANCE_SGD_URL = https://fms.alliancegenome.org/download/PHENOTYPE_SGD.json.gz
 PATTERNDIR = dosdp_data
 
 #############################
@@ -21,6 +22,12 @@ PHENOTYPE_FB.json.gz:
 	wget $(ALLIANCE_FB_URL) -O
 
 PHENOTYPE_FB.json:  PHENOTYPE_FB.json.gz
+	gunzip $<
+
+PHENOTYPE_SGD.json.gz:
+	wget $(ALLIANCE_SGD_URL) -O
+
+PHENOTYPE_SGD.json:  PHENOTYPE_SGD.json.gz
 	gunzip $<
 
 #############################
@@ -49,22 +56,22 @@ flybase_fbbt_phenotypes: PHENOTYPE_FB.json
 # generates one ore more DOSDP TSV files
 
 APO_OBA_URL=https://docs.google.com/spreadsheets/d/e/2PACX-1vSsKbr0TJHfigCvG1RNQgybZrSl3Eh8DRLpnQR-51bFe0Stxt7DdBKBF6E4SQ6NPqJr82UTFZmjindF/pub?gid=0&single=true&output=tsv
-data/apo_oba.sssom.tsv: 
+data/apo_oba.sssom.tsv:
 	wget "$(APO_OBA_URL)" -O $@
 
 APO_GO_URL=https://docs.google.com/spreadsheets/d/e/2PACX-1vSsKbr0TJHfigCvG1RNQgybZrSl3Eh8DRLpnQR-51bFe0Stxt7DdBKBF6E4SQ6NPqJr82UTFZmjindF/pub?gid=575540781&single=true&output=tsv
-data/apo_go.sssom.tsv: 
+data/apo_go.sssom.tsv:
 	wget "$(APO_GO_URL)" -O $@
 
 APO_PATO_URL=https://docs.google.com/spreadsheets/d/e/2PACX-1vSsKbr0TJHfigCvG1RNQgybZrSl3Eh8DRLpnQR-51bFe0Stxt7DdBKBF6E4SQ6NPqJr82UTFZmjindF/pub?gid=1739417682&single=true&output=tsv
-data/apo_pato.sssom.tsv: 
+data/apo_pato.sssom.tsv:
 	wget "$(APO_PATO_URL)" -O $@
 
 download_mappings: data/apo_oba.sssom.tsv data/apo_go.sssom.tsv data/apo_pato.sssom.tsv
 
-sgd_phenotypes: alliance_phenotypes.json.gz
+sgd_phenotypes: PHENOTYPE_SGD.json
 	mkdir -p $(PATTERNDIR)
-	python3 scripts/extract_sgd_phenotypes.py $< $(PATTERNDIR)
+	python3 scripts/extract_sgd_phenotypes.py
 
 #############################
 ### DOSDP OWL GENERATION ####
