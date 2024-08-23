@@ -82,14 +82,14 @@ def export_sgd_phenotypes():
                 else:
                     raise ValueError(f"Phenotype description has unexpected order: {pheno['termOrder']} ({pheno})")
 
-                # if "conditionRelations" in item:
-                #     if "conditions" in item["conditionRelations"]:
-                #         for condition in item["conditionRelations"]["conditions"]:
-                #             if "chemicalOntologyId" in condition:
-                #                 chemical_ids.append(condition["chemicalOntologyId"])
-                #             elif "chemicalOntologyId" not in condition and "conditionStatement" in condition:
-                #                 print(f"Skipping {phenotype_id} {direction_id if direction_id else ''} with no chemical ID for: {condition['conditionStatement']}")
-                #                 continue
+                if "conditionRelations" in item:
+                    if "conditions" in item["conditionRelations"]:
+                        for condition in item["conditionRelations"]["conditions"]:
+                            if "chemicalOntologyId" in condition:
+                                chemical_ids.append(condition["chemicalOntologyId"])
+                            elif "chemicalOntologyId" not in condition and "conditionStatement" in condition:
+                                print(f"Skipping {phenotype_id} {direction_id if direction_id else ''} with no chemical ID for: {condition['conditionStatement']}")
+                                continue
 
         if direction_id is not None:
             pato_id, pato_label = get_mapped_pato_id(direction_id, df_sgd_pato_mapping, phenotype_id)
