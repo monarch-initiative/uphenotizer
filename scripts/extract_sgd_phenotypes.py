@@ -1,22 +1,30 @@
 import json
+from typing import List, Optional
+
 from oaklib import get_adapter
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 import pandas as pd
 
 class SGDPhenotype(BaseModel):
-    pato_id: str
-    pato_name: str
-    original_id: str
-    original_label: str
-    affected_entity_1_super: str
-    affected_entity_1_super_name: str
-    chemical_id: str
-    chemical_label: str
+    phenotype_id: str = Field(...)
+    phenotype_label: Optional[str] = Field(None)
+    direction_id: Optional[str] = Field(None)
+    direction_label: Optional[str] = Field(None)
+    chemical_ids: Optional[List[str]] = Field(default_factory=list)
+    pato_id: Optional[str] = Field(None)
+    pato_label: Optional[str] = Field(None)
 
-def get_mapped_pato_id(phenotype_term_id_order1, df_sgd_pato_mapping):
-    pato_id = df_sgd_pato_mapping[df_sgd_pato_mapping['subject_id'] == phenotype_term_id_order1]['object_id'].iloc[0]
-    pato_label = \
-        df_sgd_pato_mapping[df_sgd_pato_mapping['subject_id'] == phenotype_term_id_order1]['object_label'].iloc[0]
+def get_mapped_pato_id(direction_id, df_sgd_pato_mapping, phenotype_id = None):
+    try:
+        pato_id = df_sgd_pato_mapping[df_sgd_pato_mapping['subject_id'] == direction_id]['object_id'].iloc[0]
+        pato_label = \
+            df_sgd_pato_mapping[df_sgd_pato_mapping['subject_id'] == direction_id]['object_label'].iloc[0]
+    except IndexError:
+        print(f"Could not find PATO mapping for {direction_id}")
+        pato_from_phenotype_id, pato_from_phenotype_label = get_mapped_pato_id(phenotype_id, df_sgd_pato_mapping)
+        print(f"Could find PATO for phenotype_id {phenotype_id}: {pato_from_phenotype_id} {pato_from_phenotype_label}")
+        pato_id = None
+        pato_label = None
     return pato_id, pato_label
 
 
@@ -24,9 +32,9 @@ def export_sgd_phenotypes():
     adapter = get_adapter("sqlite:obo:apo")
 
     # Path to the file
-    sgd_raw_data_path = '../data/PHENOTYPE_SGD.json'
-    sgd_dosdp_path = '../data/sgd_dosdp.tsv'
-    sgd_pato_mapping_path = '../data/apo_pato.sssom.tsv'
+    sgd_raw_data_path = 'data/PHENOTYPE_SGD.json'
+    sgd_dosdp_path = 'data/sgd_dosdp.tsv'
+    sgd_pato_mapping_path = 'data/apo_pato.sssom.tsv'
 
     df_sgd_dosdp = pd.read_csv(sgd_dosdp_path, sep='\t')
     df_sgd_pato_mapping = pd.read_csv(sgd_pato_mapping_path, sep='\t')
@@ -44,65 +52,79 @@ def export_sgd_phenotypes():
     data = []
 
     for item in json_data["data"]:
-        phenotype_term_id_order1 = None
-        phenotype_term_id_order2 = None
-        phenotype_term_id_order1_label = None
-        phenotype_term_id_order2_label = None
-        chemical_id = None
-        chemical_label = None
+        phenotype_id = None
+        phenotype_label = None
+        direction_id = None
+        direction_label = None
+        chemical_ids: List[str] = []
+
 
         if "phenotypeTermIdentifiers" in item:
-            for pheno_id in item["phenotypeTermIdentifiers"]:
+            for pheno in item["phenotypeTermIdentifiers"]:
 
-                if pheno_id['termOrder'] == 1:
-                    if phenotype_term_id_order1:
+                if pheno['termOrder'] == 1:
+                    if direction_id:
                         raise ValueError(
-                            f"Phenotype description has unexpected term item: {pheno_id['termOrder']} ({pheno_id})")
-                    phenotype_term_id_order1 = pheno_id['termId']
-                    if not phenotype_term_id_order1:
-                        raise ValueError(f"Phenotype description has unexpected term order 1 item: {pheno_id}")
-                    phenotype_term_id_order1_label = adapter.label(phenotype_term_id_order1)
-                elif pheno_id['termOrder'] == 2:
-                    if phenotype_term_id_order2:
+                            f"Phenotype description has unexpected term item: {pheno['termOrder']} ({pheno})")
+                    direction_id = pheno['termId']
+                    if not direction_id:
+                        raise ValueError(f"Phenotype description has unexpected term order 1 item: {pheno}")
+                    direction_label = adapter.label(direction_id)
+                elif pheno['termOrder'] == 2:
+                    if phenotype_id:
                         raise ValueError(
-                            f"Phenotype description has unexpected term item: {pheno_id['termOrder']} ({pheno_id})")
-                    phenotype_term_id_order2 = pheno_id['termId']
-                    if not phenotype_term_id_order2:
-                        raise ValueError(f"Phenotype description has unexpected term order 2 item: {pheno_id}")
-                    phenotype_term_id_order2_label = adapter.label(phenotype_term_id_order2)
+                            f"Phenotype description has unexpected term item: {pheno['termOrder']} ({pheno})")
+                    phenotype_id = pheno['termId']
+                    phenotype_label = adapter.label(phenotype_id)
+                    if not phenotype_id:
+                        raise ValueError(f"Phenotype description has unexpected term order 2 item: {pheno}")
+
                 else:
-                    raise ValueError(f"Phenotype description has unexpected order: {pheno_id['termOrder']} ({pheno_id})")
+                    raise ValueError(f"Phenotype description has unexpected order: {pheno['termOrder']} ({pheno})")
 
-                if "conditionRelations" in item:
-                    if "conditions" in item["conditionRelations"]:
-                        for condition in item["conditionRelations"]["conditions"]:
-                            if "chemical" in condition:
-                                if chemical_id is not None:
-                                    raise ValueError(f"Phenotype description has multiple chemical item: {condition}")
-                                chemical_id = condition["chemical"]["termId"]
-                                chemical_label = adapter.label(chemical_id)
+                # if "conditionRelations" in item:
+                #     if "conditions" in item["conditionRelations"]:
+                #         for condition in item["conditionRelations"]["conditions"]:
+                #             if "chemicalOntologyId" in condition:
+                #                 chemical_ids.append(condition["chemicalOntologyId"])
+                #             elif "chemicalOntologyId" not in condition and "conditionStatement" in condition:
+                #                 print(f"Skipping {phenotype_id} {direction_id if direction_id else ''} with no chemical ID for: {condition['conditionStatement']}")
+                #                 continue
 
+        if direction_id is not None:
+            pato_id, pato_label = get_mapped_pato_id(direction_id, df_sgd_pato_mapping, phenotype_id)
+        else:
+            pato_id = None
+            pato_label = None
+        # phenotype_record = SGDPhenotype(
+        #              pato_id=pato_id,
+        #              pato_label=pato_label,
+        #              phenotype_id=phenotype_id,
+        #              phenotype_name=phenotype_label,
+        #              direction_id=direction_id,
+        #              direction_name=direction_label)
+        #              # chemical_ids=chemical_ids)
+        # data.append(phenotype_record.dict())
 
-        pato_id, pato_label = get_mapped_pato_id(phenotype_term_id_order1, df_sgd_pato_mapping)
-        phenotype_record = SGDPhenotype(pato_id=pato_id,
-                     pato_name=pato_label,
-                     phenotype_term_id_order1=phenotype_term_id_order1,
-                     phenotype_term_id_order1_label=phenotype_term_id_order1_label,
-                     affected_entity_1_super=phenotype_term_id_order2,
-                     affected_entity_1_super_name=phenotype_term_id_order2_label,
-                     chemical_id=chemical_id,
-                     chemical_label=chemical_label)
+        data.append({
+            "pato_id": pato_id,
+            "pato_id_name": pato_label,
+            "phenotype_id": phenotype_id,
+            "phenotype_label": phenotype_label,
+            "direction_id": direction_id,
+            "direction_label": direction_label,
+            "chemical_ids": "|".join(chemical_ids) if chemical_ids else None
+        })
 
-        data.append(phenotype_record.dict())
-
-    df = pd.DataFrame.from_records(data, columns=["pato_id",
-                                                  "pato_id_name",
-                                                  "original_id",
-                                                  "original_label",
-                                                  "affected_entity_1_super",
-                                                  "affected_entity_1_super_name",
-                                                  "chemical_id",
-                                                  "chemical_label"])
+    df = pd.DataFrame.from_records(data, columns=[
+        "pato_id",
+        "pato_id_name",
+        "phenotype_id",
+        "phenotype_label",
+        "direction_id",
+        "direction_label",
+        "chemical_ids"
+    ])
 
     print(df.head())
 

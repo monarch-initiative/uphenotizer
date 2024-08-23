@@ -18,17 +18,13 @@ all:
 ### Alliance Data ###########
 #############################
 
-PHENOTYPE_FB.json.gz:
-	wget $(ALLIANCE_FB_URL) -O
+data/PHENOTYPE_FB.json:
+	curl -O --output-dir data $(ALLIANCE_FB_URL)
+	gunzip -f $@.gz
 
-PHENOTYPE_FB.json:  PHENOTYPE_FB.json.gz
-	gunzip $<
-
-PHENOTYPE_SGD.json.gz:
-	wget $(ALLIANCE_SGD_URL) -O
-
-PHENOTYPE_SGD.json:  PHENOTYPE_SGD.json.gz
-	gunzip $<
+data/PHENOTYPE_SGD.json:
+	curl -O --output-dir data $(ALLIANCE_SGD_URL)
+	gunzip -f $@.gz
 
 #############################
 ### Ontology Dependencies ###
@@ -48,7 +44,7 @@ data/merged.owl: $(foreach n,$(SOURCES), data/$(n).owl)
 
 # Takes as an input the alliance_phenotypes.json file and 
 # generates one ore more DOSDP TSV files
-flybase_fbbt_phenotypes: PHENOTYPE_FB.json
+flybase_fbbt_phenotypes: data/PHENOTYPE_FB.json
 	mkdir -p $(PATTERNDIR)
 	python3 scripts/extract_flybase_fbbt_phenotypes.py
 
@@ -69,7 +65,7 @@ data/apo_pato.sssom.tsv:
 
 download_mappings: data/apo_oba.sssom.tsv data/apo_go.sssom.tsv data/apo_pato.sssom.tsv
 
-sgd_phenotypes: PHENOTYPE_SGD.json
+sgd_phenotypes: data/PHENOTYPE_SGD.json
 	mkdir -p $(PATTERNDIR)
 	python3 scripts/extract_sgd_phenotypes.py
 
