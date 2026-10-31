@@ -1,0 +1,29 @@
+# FlyBase routing configuration. See specs/2026-10-31-weekly-pattern-pipeline-design.md.
+
+# FBcv namespaces for head terms that are DPO phenotype classes; uPheno already ingests DPO.
+covered_upstream_namespaces:
+  - phenotypic_class
+
+# FBcv namespaces that describe genetic or experimental context, not the phenotype itself.
+# Terms in these namespaces are dropped. FBdv terms (stage of observation) are dropped too.
+context_namespaces:
+  - dominance_qualifier
+  - clone_qualifier
+  - genotype_to_phenotype_relation
+  - sex_qualifier
+  - temporal_qualifier
+
+drop_prefixes:
+  - FBdv
+
+# Head FBbt term, optionally with one modifier: modifier CURIE (or "none") -> pattern.
+anatomy:
+  none: abnormalAnatomicalEntity
+  FBcv:0000068: abnormallyIncreasedNumberOfAnatomicalEntity  # increased number
+  FBcv:0007048: abnormallyDecreasedNumberOfAnatomicalEntity  # decreased number
+
+# Head GO term without modifier: GO namespace -> pattern.
+go:
+  biological_process: abnormalBiologicalProcess
+  cellular_component: abnormalCellularComponent
+  molecular_function: abnormalMolecularFunction

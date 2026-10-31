@@ -1,0 +1,16 @@
+qualifier	observable	pattern	filler_var	filler	fallback	comment
+APO:0000003	APO:0000087	abnormallyDecreasedResistanceOfWholeOrganismToChemicalEntity	chemical_entity	chemical	CHEBI:24431	decreased resistance to chemicals
+APO:0000004	APO:0000087	abnormallyIncreasedResistanceOfWholeOrganismToChemicalEntity	chemical_entity	chemical	CHEBI:24431	increased resistance to chemicals
+APO:0000003	APO:0000090	abnormallyDecreasedResistanceOfWholeOrganismToChemicalEntity	chemical_entity	chemical	CHEBI:33521	decreased metal resistance; fallback metal atom
+APO:0000004	APO:0000090	abnormallyIncreasedResistanceOfWholeOrganismToChemicalEntity	chemical_entity	chemical	CHEBI:33521	increased metal resistance; fallback metal atom
+APO:0000003	APO:0000215	abnormallyDecreasedResistanceOfWholeOrganismToChemicalEntity	chemical_entity	chemical		decreased toxin resistance; toxin is a ChEBI role, so no fallback
+APO:0000004	APO:0000215	abnormallyIncreasedResistanceOfWholeOrganismToChemicalEntity	chemical_entity	chemical		increased toxin resistance; toxin is a ChEBI role, so no fallback
+APO:0000003	APO:0000095	abnormallyDecreasedLevelOfChemicalEntity	chemical_entity	chemical	CHEBI:24431	decreased chemical compound accumulation
+APO:0000004	APO:0000095	abnormallyIncreasedLevelOfChemicalEntity	chemical_entity	chemical	CHEBI:24431	increased chemical compound accumulation
+APO:0000002	GO	abnormalBiologicalProcess	biological_process	observable_go		abnormal <process>
+APO:0000245	GO	abnormallyDecreasedRateOfBiologicalProcess	biological_process	observable_go		decreased rate <process>
+APO:0000246	GO	abnormallyIncreasedRateOfBiologicalProcess	biological_process	observable_go		increased rate <process>
+APO:0000249	GO	abnormallyDelayedBiologicalProcess	biological_process	observable_go		delayed <process>
+APO:0000251	GO	abnormallyPrematureBiologicalProcess	biological_process	observable_go		premature <process>
+APO:0000250	GO	abnormallyArrestedBiologicalProcess	biological_process	observable_go		arrested <process>
+APO:0000005	GO	abnormalAbsenceOfBiologicalProcess	biological_process	observable_go		absent <process>

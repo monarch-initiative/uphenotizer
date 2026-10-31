@@ -1,0 +1,23 @@
+[project]
+name = "uphenotizer"
+version = "0.1.0"
+description = "Translate Alliance FlyBase and SGD phenotype annotations into uPheno DOSDP pattern tables"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pyyaml>=6"]
+
+[project.scripts]
+uphenotizer = "uphenotizer.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
