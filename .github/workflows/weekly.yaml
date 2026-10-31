@@ -1,0 +1,49 @@
+name: Weekly DPO-ext / APO-ext release
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: make install
+
+      - name: Test
+        run: make test
+
+      # ROBOT / dosdp-tools steps run in the ODK container (docker is available on GitHub runners).
+      # ELK peaks at ~10 GB with a 12 GB heap, which fits the 16 GB runner.
+      - name: Pull ODK
+        run: docker pull obolibrary/odkfull:v1.7
+
+      - name: Download inputs, route, mint, generate, classify, assemble
+        run: make all
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: auto/weekly-update
+          delete-branch: true
+          commit-message: "Weekly update of DPO-ext / APO-ext and uPheno bridges"
+          title: "Weekly update of DPO-ext / APO-ext and uPheno bridges"
+          body-path: output/summary.md
+          add-paths: |
+            release/
+            idmaps/
+            output/
+            data/apo_*.sssom.tsv
+          assignees: matentzn
