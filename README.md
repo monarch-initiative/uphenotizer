@@ -46,10 +46,25 @@ integrate with every other species.
    *abnormal FBbt:X* formally don't belong there. The components are imported into **PHENIO**, not uPheno.
    uPheno can later pull classes from here voluntarily and mint UPHENO IDs for them; `output/patterns/*.tsv`
    is ready for that.
-5. **IDs are stable.** Append-only ID maps (`idmaps/`) are keyed ZP-style: filler CURIEs ordered by
-   pattern variable name, then the pattern name, e.g. `FBbt:00004729-abnormalAnatomicalEntity`. A key
-   that disappears from the data keeps its ID, and its class is deprecated, never reused.
-6. **No lossy translation.** Context that isn't phenotypic (dominance, clone type, sex, maternal effect,
+5. **Direct links to the affected entity.** Each class carries `SubClassOf(P, UPHENO:0000001 some E)`
+   ("phenotype affects entity") and `SubClassOf(P, UPHENO:0000003 some E)` ("phenotype is associated
+   with entity"). These are exactly what PHENIO's `upheno:extract-upheno-relations` adds to other
+   phenotypes, with E being the bearer of the logical definition (the `inheres_in` /
+   `inheres_in_part_of` filler). PHENIO can't derive them for our classes because they ship without
+   logical definitions, so we materialise them. Following the same rule, a resistance phenotype links
+   to the organism and not to the chemical.
+6. **Taxon is explicit.** Both components share the `PHENOTYPE:` prefix, so unlike HP, MP or ZP the prefix
+   doesn't tell you the species. Every class therefore carries
+   - `SubClassOf(P, RO:0002162 some NCBITaxon:7227)` (DPO-ext) or `… some NCBITaxon:559292` (APO-ext). This
+     is "in taxon" (Biolink `in_taxon`), using the same taxon the Monarch KG gives FlyBase and SGD genes.
+   - `oboInOwl:inSubset` `fly_phenotype` or `yeast_phenotype`, because Monarch search can filter by subset.
+7. **IDs are stable, and nothing is deprecated.** Append-only ID maps (`idmaps/`) are keyed ZP-style:
+   filler CURIEs ordered by pattern variable name, then the pattern name, e.g.
+   `FBbt:00004729-abnormalAnatomicalEntity`. These classes are **not intended for curation or annotation**:
+   every class says so in an `rdfs:comment` and points to uPheno classes instead. So they have no curation
+   lifecycle. A class whose key no longer occurs in the data stays in the release (still classified and
+   bridged), and its ID is never reused. Rows for classes that were never released can be removed by hand.
+8. **No lossy translation.** Context that isn't phenotypic (dominance, clone type, sex, maternal effect,
    stage) may be dropped. Qualifiers that change the phenotype (spatial, structural, intensity) leave the
    annotation unrouted until a rule covers it faithfully. A bare FBbt annotation means *phenotype
    manifest in X*, not "abnormal X morphology". SGD chemical conditions without a ChEBI ID are never
@@ -75,7 +90,7 @@ Alliance PHENOTYPE_FB/SGD ─► aggregate ─► route (config/) ─► mint ID
 
 | File | Content |
 |---|---|
-| `dpo-ext-base.owl`, `apo-ext-base.owl` | Classes with label and text definition (from the uPheno pattern templates), synonyms, provenance comment, in-component hierarchy, deprecations |
+| `dpo-ext-base.owl`, `apo-ext-base.owl` | Classes with label and text definition (from the uPheno pattern templates), synonyms, provenance and usage comments, in-component hierarchy, links to the affected entity, in-taxon axiom and subset |
 | `dpo-ext-bridge.owl`, `apo-ext-bridge.owl` | `SubClassOf(ext class, UPHENO class)`: the most specific existing uPheno grouping, or the equivalent uPheno class |
 | `*-upheno.sssom.tsv` | The bridge as SSSOM: `semapv:crossSpeciesExactMatch` (equivalent) or `skos:broadMatch` (grouping), `semapv:LogicalReasoning` |
 
@@ -88,7 +103,10 @@ copies. `idmaps/<component>.tsv` holds the append-only `id → key` maps.
 - **FlyBase** (`config/flybase.yaml`):
   - A head term that is an FBcv `phenotypic_class` term is already a DPO class, so it's `covered_upstream`.
   - A head FBbt term becomes `abnormalAnatomicalEntity`, or `abnormallyIncreased/DecreasedNumberOfAnatomicalEntity` with the FBcv number qualifiers.
-  - A head GO term goes to the abnormal-process, abnormal-component or abnormal-function pattern for its GO namespace.
+  - A head GO term goes to the abnormal-process, abnormal-component or abnormal-function pattern for its GO namespace. GO cellular components also accept the number qualifiers.
+  - FBbt terms that duplicate a GO cellular component without saying so (e.g. `FBbt:00005110` and
+    `GO:0030425`, both "dendrite") are routed as the GO term (`fbbt_as_go`), so each pair yields one class
+    instead of two with the same label. The PR summary lists any remaining duplicate labels.
 - **SGD** (`config/sgd_rules.tsv`): one row per qualifier and observable, naming the target pattern and
   where the filler comes from. The filler is either the ChEBI condition (with an optional fallback class) or the observable's
   `skos:exactMatch` GO term from `data/apo_go.sssom.tsv` (`observable = GO` wildcard).
@@ -107,7 +125,7 @@ SGD chemical phenotypes without a ChEBI condition are bound to a generic fallbac
 resistance of organism to chemical entity*), marked `fallback …` in `reason` and counted in `summary.md`. About
 half of SGD's chemical annotations arrive without one: SGD names the chemical in its own data, but the Alliance export
 drops chemicals that SGD hasn't mapped to ChEBI. As soon as an export carries the chemical, the record binds to
-the specific class. The generic class is deprecated once nothing binds to it anymore. Its ID is never reused.
+the specific class. The generic class stays in the release even once nothing binds to it anymore.
 
 ### Reports (`output/`)
 

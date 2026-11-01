@@ -90,8 +90,39 @@ giving `monarch-initiative.github.io/uphenotizer/release/â€¦`. Version IRIs (`â€
 don't resolve yet, because there are no dated copies.
 
 ID maps live in `idmaps/dpo-ext.tsv` and `idmaps/apo-ext.tsv` (`id`, `key`), and are append-only. A key
-that disappears from the source data keeps its ID, and its class is marked `owl:deprecated true` (with
-`IAO:0100001 term replaced by` only when an unambiguous successor exists). A key that reappears gets its old ID back, un-deprecated.
+that disappears from the source data keeps its ID, and its class stays in the release.
+
+**No deprecation (Nico's decision).** These classes are not intended for curation or annotation, and every class
+carries an `rdfs:comment` saying so and pointing to uPheno classes. They have no curation lifecycle, so there is
+no `owl:deprecated`, no "obsolete" labels and no `replaced by`. Rows for never-released classes can be removed
+by hand, as was done for the five FBbt duplicates replaced by `fbbt_as_go`.
+
+### Entity links (Nico's decision: use PHENIO's relations)
+
+Released classes carry `SubClassOf(P, UPHENO:0000001 some E)` and `SubClassOf(P, UPHENO:0000003 some E)`,
+in exactly the form PHENIO's `upheno:extract-upheno-relations` (monarch-robot-plugins, `UphenoUtils`) adds to
+other phenotypes. E is the named filler of `inheres_in` / `inheres_in_part_of` in the logical definition.
+We compute them before stripping the definitions (`Hierarchy.bearers`). The properties are declared in
+`config/declarations.ofn`.
+
+### Taxon marking (Nico's decision, my recommendation)
+
+PHENIO puts no taxon marker on any phenotype class. HP, MP, ZP, DPO and FYPO are told apart by prefix, and
+Monarch search filters on namespace, subset and `in_taxon`. The shared `PHENOTYPE:` prefix breaks that
+convention, so every class carries `SubClassOf(P, RO:0002162 some <taxon>)` ("in taxon", Biolink `in_taxon`) and
+`oboInOwl:inSubset uphenotizer:fly_phenotype` / `uphenotizer:yeast_phenotype`. Taxa are `NCBITaxon:7227` and
+`NCBITaxon:559292` (S. cerevisiae S288C), chosen because SGD genes carry 559292 in the Alliance files and hence in
+the KG (`alliance-ingest`, `gene.py`), and PHENIO's taxslim includes it. Not verified: whether the KG build
+turns a class-level `RO:0002162` axiom into the node's `in_taxon`. The subset works for search regardless.
+Declarations are in `config/declarations.ofn`.
+
+### FBbt terms duplicating GO
+
+FlyBase annotates with both `FBbt:00005110` and `GO:0030425` ("dendrite"), and likewise for dendritic tree,
+synapse and yolk. FBbt has no axiom relating them, so ELK correctly kept them apart, which produced two classes
+with identical labels per pair. `config/flybase.yaml: fbbt_as_go` routes the FBbt terms as their GO
+counterparts until FBbt asserts the equivalence (upstream issue drafted). The release summary lists duplicate
+labels within a component so new cases surface.
 
 ### Bindings (Nico's decision: keep the SGD fallback, but bindings must follow the data)
 
@@ -101,7 +132,7 @@ recomputed on every run. SGD chemical phenotypes with no ChEBI condition bind to
 (81,589 annotations on 2026-10-31). The cause is upstream: SGD's own `phenotype_data.tab` names a chemical for
 every "resistance to chemicals" annotation, but the Alliance export keeps only ChEBI-mapped ones. That held for
 both the Jan-2024 and the current dump (51% with ChEBI in each). When a later export carries the chemical, the
-record becomes a different unit and binds to the specific class. The fallback class is deprecated once unused,
+record becomes a different unit and binds to the specific class. The fallback class stays released once unused,
 and its ID is kept. This is covered by `tests/test_binding.py`.
 
 ### Pipeline

@@ -35,7 +35,9 @@ non-TTY shells). Set `ODK=` to run them natively inside an ODK image, and `ODK_M
   - `classify.py`: reads the ELK export and finds the nearest targets, walking through other classes and
     their equivalents, without redundant targets.
   - `release.py`: ROBOT templates (base, bridge), SSSOM, and the summary section.
-- `scripts/odk-{generate,classify,assemble}.sh`: the ODK steps. `sparql/obsolete-labels.ru` handles deprecated labels.
+- `scripts/odk-{generate,classify,assemble}.sh`: the ODK steps. `config/declarations.ofn` declares the PHENIO
+  entity relations, "in taxon" and the `fly_phenotype` / `yeast_phenotype` subsets used in the base files.
+  Each component's taxon and subset live in `components.py`.
 - `config/`: routing tables. **Curation lives here, not in code.**
 - `data/apo_*.sssom.tsv`: APO mappings downloaded from a Google Sheet (the source of truth). Never hand-edit them.
 - `patterns/`: local patterns not yet in uPheno. Rows routed to them go to `output/pending/`.
@@ -44,9 +46,11 @@ non-TTY shells). Set `ODK=` to run them natively inside an ODK image, and `ODK_M
 
 ## Invariants (do not break)
 
-- **IDs are minted here, append-only.** `idmaps/*.tsv` rows are never deleted or reassigned. When a key
-  disappears from the data, its class is deprecated. A run with only one source must never touch the
-  other component's map (`update_idmaps(..., sources)`).
+- **IDs are minted here, append-only, and never deprecated.** `idmaps/*.tsv` rows are never reassigned. A
+  class whose key disappears from the data stays in the release. The classes aren't meant for
+  curation or annotation (every class carries `release.USAGE_NOTE`), so there's no `owl:deprecated`, no
+  "obsolete" labels and no `replaced by`. Only rows for classes that were never released may be deleted, by hand.
+  A run with only one source must never touch the other component's map (`update_idmaps(..., sources)`).
 - **Never mint UPHENO IDs or change uPheno.** uPheno may pull classes from here, but that's its process, not ours.
 - **Released components contain no logical definitions.** They're generated and reasoned over, then removed in
   `odk-assemble.sh`. The hierarchy and bridges are materialised.
@@ -57,6 +61,11 @@ non-TTY shells). Set `ODK=` to run them natively inside an ODK image, and `ODK_M
   `.tsv`, and ours uses CURIEs. If you change ordering or format, ID reuse silently breaks.
 - **`output/patterns` tables contain only the pattern vars (sorted) plus `defined_class`.** uPheno builds its key
   from every non-`defined_class` column.
+- **Entity links mirror PHENIO exactly.** `UPHENO:0000001` and `UPHENO:0000003` go to the bearer only
+  (`classify.Hierarchy.bearers`, the same rule as `UphenoUtils.processHasPart` in monarch-robot-plugins).
+  Don't add other fillers (e.g. the chemical) unless PHENIO's rule changes too.
+- **Duplicate labels within a component signal a modelling gap** (usually FBbt duplicating GO). Fix it
+  with `fbbt_as_go` in `config/flybase.yaml` plus an upstream issue, never by relabelling.
 - **No lossy routing.** Only drop qualifiers that are genetic or experimental context. A qualifier
   that changes the phenotype makes the unit `unrouted` until a rule covers it faithfully.
 - **Output is deterministic and sorted**, so weekly PR diffs stay readable.
