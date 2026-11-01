@@ -27,3 +27,18 @@ go:
   biological_process: abnormalBiologicalProcess
   cellular_component: abnormalCellularComponent
   molecular_function: abnormalMolecularFunction
+
+# Head GO cellular component with one modifier: modifier CURIE -> pattern.
+go_cellular_component_modifiers:
+  FBcv:0000068: abnormallyIncreasedNumberOfCellularComponent  # increased number
+  FBcv:0007048: abnormallyDecreasedNumberOfCellularComponent  # decreased number
+
+# FBbt terms that duplicate a GO cellular component but carry no axiom saying so. FlyBase annotates
+# with both; without this, each pair yields two unrelated classes with the same label. Annotations
+# using the FBbt term are routed as if they used the GO term. Remove an entry once FBbt asserts the
+# equivalence itself.
+fbbt_as_go:
+  FBbt:00005110: GO:0030425  # dendrite
+  FBbt:00005111: GO:0097447  # dendritic tree
+  FBbt:00005114: GO:0045202  # synapse
+  FBbt:00000035: GO:0060417  # yolk

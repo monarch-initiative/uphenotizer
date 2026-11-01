@@ -23,11 +23,14 @@ class FlybaseRouter:
         self.context = set(config["context_namespaces"])
         self.covered = set(config["covered_upstream_namespaces"])
         self.drop_prefixes = set(config["drop_prefixes"])
-        self.modifiers = {k for k in config["anatomy"] if k != "none"}
+        self.cc_modifiers = config.get("go_cellular_component_modifiers", {})
+        self.modifiers = {k for k in config["anatomy"] if k != "none"} | set(self.cc_modifiers)
+        self.fbbt_as_go = config.get("fbbt_as_go", {})
 
     def configured_patterns(self) -> dict[str, list[str]]:
         patterns = {p: [ANATOMY_VAR] for p in self.config["anatomy"].values()}
         patterns.update({p: [GO_VARS[ns]] for ns, p in self.config["go"].items()})
+        patterns.update({p: [GO_VARS["cellular_component"]] for p in self.cc_modifiers.values()})
         return patterns
 
     def route(self, unit: Unit) -> Outcome:
@@ -59,21 +62,31 @@ class FlybaseRouter:
             return Outcome(unit, UNROUTED, reason="multiple modifiers: " + " ".join(modifiers))
         modifier = modifiers[0] if modifiers else "none"
 
+        rule_prefix = "fb"
+        if head in self.fbbt_as_go:
+            head, rule_prefix = self.fbbt_as_go[head], "fb:fbbt-as-go"
+
         if _prefix(head) == "FBbt":
+            if modifier not in self.config["anatomy"]:
+                return Outcome(unit, UNROUTED, reason=f"FBbt head with modifier {modifier}")
             pattern = self.config["anatomy"][modifier]
-            return Outcome(unit, ROUTED, rule=f"fb:anatomy:{modifier}",
+            return Outcome(unit, ROUTED, rule=f"{rule_prefix}:anatomy:{modifier}",
                            route=Route.of(pattern, **{ANATOMY_VAR: head}))
 
         if _prefix(head) == "GO":
-            if modifier != "none":
-                return Outcome(unit, UNROUTED, reason=f"GO head with modifier {modifier}")
             term = self.go.get(head)
             if term is None or term.obsolete:
                 return Outcome(unit, UNROUTED, reason=f"{head} unknown or obsolete in GO")
-            pattern = self.config["go"].get(term.namespace)
+            if modifier == "none":
+                pattern = self.config["go"].get(term.namespace)
+            elif term.namespace == "cellular_component":
+                pattern = self.cc_modifiers.get(modifier)
+            else:
+                pattern = None
             if pattern is None:
-                return Outcome(unit, UNROUTED, reason=f"no pattern for GO namespace {term.namespace}")
-            return Outcome(unit, ROUTED, rule=f"fb:go:{term.namespace}",
+                return Outcome(unit, UNROUTED,
+                               reason=f"no pattern for GO {term.namespace} with modifier {modifier}")
+            return Outcome(unit, ROUTED, rule=f"{rule_prefix}:go:{term.namespace}:{modifier}",
                            route=Route.of(pattern, **{GO_VARS[term.namespace]: head}))
 
         return Outcome(unit, UNROUTED, reason=f"unhandled head term prefix {_prefix(head)}")

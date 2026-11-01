@@ -22,6 +22,8 @@ GO = {
     "GO:0000002": Term("GO:0000002", "cc", "cellular_component"),
     "GO:0000003": Term("GO:0000003", "mf", "molecular_function"),
     "GO:0000004": Term("GO:0000004", "old", "biological_process", obsolete=True),
+    "GO:0030425": Term("GO:0030425", "dendrite", "cellular_component"),
+    "GO:0045202": Term("GO:0045202", "synapse", "cellular_component"),
 }
 
 
@@ -85,8 +87,24 @@ def test_obsolete_or_unknown_go_unrouted(router):
     assert route(router, "GO:9999999").status == UNROUTED
 
 
-def test_go_with_modifier_unrouted(router):
+def test_go_process_with_modifier_unrouted(router):
     assert route(router, "GO:0000001", "FBcv:0000068").status == UNROUTED
+
+
+def test_fbbt_duplicate_of_go_routes_as_go(router):
+    # FBbt:00005110 and GO:0030425 are both 'dendrite': one class, not two
+    o = route(router, "FBbt:00005110", "FBcv:0000298")
+    assert o.route == Route.of("abnormalCellularComponent", cellular_component="GO:0030425")
+    assert o.rule.startswith("fb:fbbt-as-go")
+    assert route(router, "GO:0030425").route == o.route
+
+
+def test_go_cellular_component_number_modifier(router):
+    o = route(router, "FBbt:00005114", "FBcv:0000068")  # synapse, increased number
+    assert o.route == Route.of("abnormallyIncreasedNumberOfCellularComponent",
+                               cellular_component="GO:0045202")
+    assert route(router, "GO:0045202", "FBcv:0007048").route.pattern == \
+        "abnormallyDecreasedNumberOfCellularComponent"
 
 
 def test_configured_patterns(router):
