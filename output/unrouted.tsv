@@ -345,8 +345,6 @@ FB	FBbt:00004508|FBcv:0000053	18	0	eye | anterior	unhandled qualifiers: FBcv:000
 FB	FBbt:00004729|FBcv:0000061|FBcv:0000336	18	0	wing | ectopic | somatic clone	unhandled qualifiers: FBcv:0000061
 FB	FBbt:00006009|FBcv:0000061	18	0	eye photoreceptor cell | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0005739|GO:0007283	18	0	mitochondrion | spermatogenesis	unhandled qualifiers: GO:0007283
-FB	GO:0005773|FBdv:00005369|FBcv:0000068	18	0	vacuole | adult stage | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005811|FBdv:00005369|FBcv:0000068	18	0	lipid droplet | adult stage | increased number	GO head with modifier FBcv:0000068
 FB	SO:0000340|FBdv:00005339	18	0	chromosome | third instar larval stage	unhandled head term prefix SO
 SGD	APO:0000002|APO:0000037	18	0	abnormal pheromone sensitivity	no rule for qualifier/observable
 SGD	APO:0000004|APO:0000202	18	3	increased alkaline pH resistance	no rule for qualifier/observable
@@ -456,11 +454,8 @@ FB	FBbt:00004508|FBcv:0000336|FBcv:0000070	10	0	eye | somatic clone | ventral	un
 FB	FBbt:00004767|FBcv:0000061	10	0	anterior crossvein | ectopic	unhandled qualifiers: FBcv:0000061
 FB	FBbt:00005177|FBcv:0000061	10	0	chaeta | ectopic	unhandled qualifiers: FBcv:0000061
 FB	FBbt:00057012|GO:0048477|FBdv:00004886	10	0	female germline cell | oogenesis | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0005776|FBcv:0000068	10	0	autophagosome | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005874|GO:0048477	10	0	microtubule | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0016028|FBdv:00005369|FBcv:0007048	10	0	rhabdomere | adult stage | decreased number	GO head with modifier FBcv:0007048
 FB	GO:0051320|FBcv:0000061	10	0	S phase | ectopic	unhandled qualifiers: FBcv:0000061
-FB	GO:0070864|FBcv:0007048	10	0	sperm individualization complex | decreased number	GO head with modifier FBcv:0007048
 SGD	APO:0000002|APO:0000044	10	0	abnormal sporulation efficiency	no rule for qualifier/observable
 SGD	APO:0000002|APO:0000317	10	0	abnormal replicative lifespan	no rule for qualifier/observable
 SGD	APO:0000003|APO:0000087	10	1	decreased resistance to chemicals	chemical condition not mapped to ChEBI: media:magnesium-limited synthetic medium
@@ -486,7 +481,6 @@ FB	FBbt:00004878|FBcv:0000061	9	0	nurse cell | ectopic	unhandled qualifiers: FBc
 FB	FBbt:00004878|FBcv:0000061|FBcv:0000335	9	0	nurse cell | ectopic | germline clone	unhandled qualifiers: FBcv:0000061
 FB	FBbt:00004894|GO:0048477|FBdv:00004886	9	0	egg chamber | oogenesis | oogenesis	unhandled qualifiers: GO:0048477
 FB	FBbt:00007136|FBcv:0000336|GO:0007283	9	0	male germline cyst | somatic clone | spermatogenesis	unhandled qualifiers: GO:0007283
-FB	GO:0045202|FBcv:0007048|FBdv:00005336	9	0	synapse | decreased number | larval stage	GO head with modifier FBcv:0007048
 SGD	APO:0000003|APO:0000087	9	1	decreased resistance to chemicals	chemical condition not mapped to ChEBI: media:YEPD
 SGD	APO:0000004|APO:0000090	9	1	increased metal resistance	chemical condition not mapped to ChEBI: media:minimal medium, SD agar
 SGD	APO:0000004|APO:0000310	9	5	increased growth in exponential phase	no rule for qualifier/observable
@@ -523,7 +517,6 @@ FB	FBbt:00005173|FBcv:0000061	8	0	thecogen cell | ectopic	unhandled qualifiers: 
 FB	FBbt:00005378|FBcv:0000061	8	0	wing margin | ectopic	unhandled qualifiers: FBcv:0000061
 FB	FBbt:00005908|FBcv:0000061	8	0	medial longitudinal fascicle | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0005874|GO:0007283	8	0	microtubule | spermatogenesis	unhandled qualifiers: GO:0007283
-FB	GO:0030175|FBcv:0000068	8	0	filopodium | increased number	GO head with modifier FBcv:0000068
 FB	GO:0032432|GO:0048477|FBdv:00004886	8	0	actin filament bundle | oogenesis | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0098858|GO:0048477|FBdv:00004886|FBcv:0000336	8	0	actin-based cell projection | oogenesis | oogenesis | somatic clone	unhandled qualifiers: GO:0048477
 SGD	APO:0000002|APO:0000274	8	0	abnormal prion state	no rule for qualifier/observable
@@ -617,16 +610,9 @@ FB	FBbt:10005989|FBcv:0007049	6	0	cystic bulge | absent	unhandled qualifiers: FB
 FB	GO:0000278|FBcv:0000061	6	0	mitotic cell cycle | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0000795|FBcv:0000061	6	0	synaptonemal complex | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0005634|GO:0048477|FBdv:00004886	6	0	nucleus | oogenesis | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0005739|FBdv:00005369|FBcv:0007048|FBcv:0000336	6	0	mitochondrion | adult stage | decreased number | somatic clone	GO head with modifier FBcv:0007048
-FB	GO:0005776|FBcv:0000336|FBcv:0000068	6	0	autophagosome | somatic clone | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005811|FBcv:0000068	6	0	lipid droplet | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005813|FBcv:0000068	6	0	centrosome | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005879|GO:0007283	6	0	axonemal microtubule | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0030864|GO:0048477	6	0	cortical actin cytoskeleton | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0031594|FBcv:0000061	6	0	neuromuscular junction | ectopic	unhandled qualifiers: FBcv:0000061
-FB	GO:0044307|FBcv:0007048|FBdv:00005336|FBcv:0000336	6	0	dendritic branch | decreased number | larval stage | somatic clone	GO head with modifier FBcv:0007048
-FB	GO:0048786|FBcv:0000068	6	0	presynaptic active zone | increased number	GO head with modifier FBcv:0000068
-FB	GO:0070865|FBcv:0007048	6	0	investment cone | decreased number	GO head with modifier FBcv:0007048
 FB	SO:0000340|FBdv:00005289	6	0	chromosome | embryonic stage	unhandled head term prefix SO
 SGD	APO:0000002|APO:0000301	6	0	abnormal Golgi distribution	no rule for qualifier/observable
 SGD	APO:0000003|APO:0000095	6	1	decreased chemical compound accumulation	chemical condition not mapped to ChEBI: media:nonfermentable carbon source
@@ -675,7 +661,6 @@ FB	FBbt:00005179|FBcv:0000059	5	0	macrochaeta | dorsal	unhandled qualifiers: FBc
 FB	FBbt:00005183|FBcv:0000061|FBcv:0000336	5	0	campaniform sensillum | ectopic | somatic clone	unhandled qualifiers: FBcv:0000061
 FB	FBbt:00005397|FBcv:0000063	5	0	embryonic epidermis | lateral	unhandled qualifiers: FBcv:0000063
 FB	GO:0005813|GO:0007283|FBcv:0000068	5	0	centrosome | spermatogenesis | increased number	unhandled qualifiers: GO:0007283
-FB	GO:0005929|FBdv:00005369|FBcv:0007048	5	0	cilium | adult stage | decreased number	GO head with modifier FBcv:0007048
 FB	GO:0042600|FBcv:0000059|FBcv:0000335	5	0	egg chorion | dorsal | germline clone	unhandled qualifiers: FBcv:0000059
 SGD	APO:0000003|APO:0000087	5	1	decreased resistance to chemicals	chemical condition not mapped to ChEBI: media:synthetic complete medium, SC
 SGD	APO:0000003|APO:0000087	5	1	decreased resistance to chemicals	chemical condition not mapped to ChEBI: media:galactose-containing media
@@ -830,35 +815,21 @@ FB	FBbt:01004296|FBcv:0000061	4	0	sex comb tooth | ectopic	unhandled qualifiers:
 FB	FBbt:10005989|GO:0007283	4	0	cystic bulge | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0000785|GO:0007283	4	0	chromatin | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0000795|GO:0048477|FBdv:00004886	4	0	synaptonemal complex | oogenesis | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0005634|FBcv:0000068	4	0	nucleus | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005739|GO:0048477	4	0	mitochondrion | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0005776|FBcv:0000068|FBdv:00005339	4	0	autophagosome | increased number | third instar larval stage	GO head with modifier FBcv:0000068
-FB	GO:0005776|FBcv:0000068|FBdv:00005341	4	0	autophagosome | increased number | wandering third instar larval stage | nutrition conditional	GO head with modifier FBcv:0000068
-FB	GO:0005776|FBcv:0007048|FBdv:00005336	4	0	autophagosome | decreased number | larval stage | calorie restriction conditional	GO head with modifier FBcv:0007048
 FB	GO:0005811|FBcv:0000061	4	0	lipid droplet | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0005813|FBcv:0000061	4	0	centrosome | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0005814|FBcv:0000061	4	0	centriole | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0005876|GO:0048477|FBdv:00004886	4	0	spindle microtubule | oogenesis | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0005879|FBcv:0000061	4	0	axonemal microtubule | ectopic	unhandled qualifiers: FBcv:0000061
-FB	GO:0005879|FBcv:0000068	4	0	axonemal microtubule | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005902|FBcv:0007048|FBdv:00005336	4	0	microvillus | decreased number | larval stage	GO head with modifier FBcv:0007048
 FB	GO:0005929|FBcv:0007049|FBdv:00005336	4	0	cilium | absent | larval stage	unhandled qualifiers: FBcv:0007049
 FB	GO:0016028|FBcv:0000061|FBcv:0000336	4	0	rhabdomere | ectopic | somatic clone	unhandled qualifiers: FBcv:0000061
-FB	GO:0030175|FBdv:00007001|FBcv:0000068	4	0	filopodium | P-stage | increased number	GO head with modifier FBcv:0000068
 FB	GO:0030175|GO:0048477|FBcv:0000336	4	0	filopodium | oogenesis | somatic clone	unhandled qualifiers: GO:0048477
 FB	GO:0030424|FBcv:0000061	4	0	axon | ectopic	unhandled qualifiers: FBcv:0000061
-FB	GO:0030425|FBcv:0000153|FBcv:0000336|FBcv:0000068	4	0	dendrite | cell autonomous | somatic clone | increased number	GO head with modifier FBcv:0000068
-FB	GO:0031982|FBdv:00007001|FBcv:0000068|FBcv:0000336	4	0	vesicle | P-stage | increased number | somatic clone	GO head with modifier FBcv:0000068
 FB	GO:0035363|FBcv:0000068|GO:0048477	4	0	histone locus body | increased number | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0036064|GO:0007283	4	0	ciliary basal body | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0042600|FBcv:0000053	4	0	egg chorion | anterior	unhandled qualifiers: FBcv:0000053
 FB	GO:0042641|GO:0048477	4	0	actomyosin | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0044292|FBcv:0007048|FBdv:00005336|FBcv:0000336	4	0	dendrite terminus | decreased number | larval stage | somatic clone	GO head with modifier FBcv:0007048
-FB	GO:0044307|FBcv:0000068|FBdv:00005336	4	0	dendritic branch | increased number | larval stage	GO head with modifier FBcv:0000068
-FB	GO:0045202|FBdv:00005369|FBcv:0000068|FBcv:0007050	4	0	synapse | adult stage | increased number | somatic clone - tissue specific	GO head with modifier FBcv:0000068
-FB	GO:0045202|FBdv:00007001|FBcv:0000068	4	0	synapse | P-stage | increased number	GO head with modifier FBcv:0000068
 FB	GO:0045495|FBcv:0000161	4	0	pole plasm | maternal effect	GO:0045495 unknown or obsolete in GO
-FB	GO:0048786|FBcv:0007048|FBdv:00005336	4	0	presynaptic active zone | decreased number | larval stage	GO head with modifier FBcv:0007048
 FB	GO:0060170|GO:0007283	4	0	ciliary membrane | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0070864|GO:0007283	4	0	sperm individualization complex | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:1903561|FBcv:0007049|FBdv:00005289	4	0	extracellular vesicle | absent | embryonic stage	unhandled qualifiers: FBcv:0007049
@@ -963,25 +934,15 @@ FB	FBbt:00049996|FBcv:0007049|FBdv:00005289	3	0	brain commissure | absent | embr
 FB	FBbt:00067064|FBcv:0000061|FBcv:0000336	3	0	adult olfactory receptor neuron Gr21a/63a | ectopic | somatic clone	unhandled qualifiers: FBcv:0000061
 FB	FBbt:00111562|FBcv:0000059|FBcv:0000336	3	0	wing blade anterior compartment | dorsal | somatic clone	unhandled qualifiers: FBcv:0000059
 FB	GO:0005634|FBcv:0000061|FBcv:0000334	3	0	nucleus | ectopic | female	unhandled qualifiers: FBcv:0000061
-FB	GO:0005776|FBdv:00005369|FBcv:0000068|FBcv:0000336	3	0	autophagosome | adult stage | increased number | somatic clone	GO head with modifier FBcv:0000068
-FB	GO:0005783|FBcv:0007048|FBdv:00005336	3	0	endoplasmic reticulum | decreased number | larval stage	GO head with modifier FBcv:0007048
-FB	GO:0005811|FBcv:0000068|FBdv:00005339	3	0	lipid droplet | increased number | third instar larval stage	GO head with modifier FBcv:0000068
-FB	GO:0005811|FBdv:00005369|FBcv:0000068|FBcv:0007050	3	0	lipid droplet | adult stage | increased number | somatic clone - tissue specific	GO head with modifier FBcv:0000068
-FB	GO:0005814|FBcv:0007048|FBdv:00005336	3	0	centriole | decreased number | larval stage	GO head with modifier FBcv:0007048
 FB	GO:0005819|FBcv:0000061	3	0	spindle | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0005886|GO:0048477	3	0	plasma membrane | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0005918|FBcv:0000061|FBdv:00005334	3	0	septate junction | ectopic | embryonic stage 16	unhandled qualifiers: FBcv:0000061
 FB	GO:0005930|FBcv:0007049|FBdv:00005369	3	0	axoneme | absent | adult stage	unhandled qualifiers: FBcv:0007049
 FB	GO:0032432|FBcv:0000061|FBcv:0000336	3	0	actin filament bundle | ectopic | somatic clone	unhandled qualifiers: FBcv:0000061
 FB	GO:0035253|FBcv:0007049	3	0	ciliary rootlet | absent	unhandled qualifiers: FBcv:0007049
-FB	GO:0035770|FBcv:0007048|FBcv:0000336	3	0	ribonucleoprotein granule | decreased number | somatic clone	GO head with modifier FBcv:0007048
 FB	GO:0035869|FBcv:0007049|FBdv:00005369	3	0	ciliary transition zone | absent | adult stage	unhandled qualifiers: FBcv:0007049
 FB	GO:0035869|GO:0007283	3	0	ciliary transition zone | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0042600|FBcv:0000061	3	0	egg chorion | ectopic | heat sensitive	unhandled qualifiers: FBcv:0000061
-FB	GO:0043679|FBcv:0000068	3	0	axon terminus | increased number	GO head with modifier FBcv:0000068
-FB	GO:0048770|FBcv:0007048|FBcv:0000336	3	0	pigment granule | decreased number | somatic clone	GO head with modifier FBcv:0007048
-FB	GO:0061176|FBcv:0000068|FBdv:00005336	3	0	type Ib terminal bouton | increased number | larval stage	GO head with modifier FBcv:0000068
-FB	GO:0061176|FBcv:0000068|FBdv:00005339	3	0	type Ib terminal bouton | increased number | third instar larval stage	GO head with modifier FBcv:0000068
 FB	GO:1990385|GO:0007283	3	0	meiotic spindle midzone | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	SO:0000340|FBdv:00004886|FBcv:0000793	3	0	chromosome | oogenesis | progressive	unhandled head term prefix SO
 FB	SO:0000340|GO:0007283	3	0	chromosome | spermatogenesis	unhandled qualifiers: GO:0007283
@@ -1548,58 +1509,22 @@ FB	FBbt:02000002|FBcv:0000061|FBcv:0000336	2	0	pale ommatidium | ectopic | somat
 FB	FBbt:02000003|FBcv:0000061	2	0	photoreceptor cell R8 of yellow ommatidium | ectopic	unhandled qualifiers: FBcv:0000061
 FB	FBbt:02000006|FBcv:0000061|FBcv:0000336	2	0	photoreceptor cell R7 of pale ommatidium | ectopic | somatic clone	unhandled qualifiers: FBcv:0000061
 FB	GO:0000228|GO:0007283	2	0	nuclear chromosome | spermatogenesis	unhandled qualifiers: GO:0007283
-FB	GO:0000262|FBcv:0000068|FBdv:00005336	2	0	mitochondrial chromosome | increased number | larval stage	GO head with modifier FBcv:0000068
-FB	GO:0000262|FBdv:00005349|FBcv:0000068	2	0	mitochondrial chromosome | pupal stage | increased number | conditional	GO head with modifier FBcv:0000068
 FB	GO:0000278|FBcv:0000053|FBdv:00005289	2	0	mitotic cell cycle | anterior | embryonic stage	unhandled qualifiers: FBcv:0000053
 FB	GO:0000775|GO:0048477|FBdv:00004886	2	0	chromosome, centromeric region | oogenesis | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0000930|GO:0048477	2	0	gamma-tubulin complex | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0001726|FBcv:0000068|FBcv:0000336	2	0	ruffle | increased number | somatic clone	GO head with modifier FBcv:0000068
 FB	GO:0005604|FBcv:0000061	2	0	basement membrane | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0005634|FBcv:0000061	2	0	nucleus | ectopic | heat sensitive	unhandled qualifiers: FBcv:0000061
 FB	GO:0005634|FBcv:0000061|FBdv:00005306|FBcv:0000161	2	0	nucleus | ectopic | embryonic stage 4 | maternal effect	unhandled qualifiers: FBcv:0000061
-FB	GO:0005634|FBcv:0000068|FBcv:0000333	2	0	nucleus | increased number | male	GO head with modifier FBcv:0000068
-FB	GO:0005634|FBcv:0000068|FBdv:00005339	2	0	nucleus | increased number | third instar larval stage	GO head with modifier FBcv:0000068
-FB	GO:0005634|FBcv:0000335|FBcv:0000068	2	0	nucleus | germline clone | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005634|FBcv:0000336|GO:0007283	2	0	nucleus | somatic clone | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0005634|FBcv:0007048|FBcv:0000335|GO:0048477	2	0	nucleus | decreased number | germline clone | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0005634|FBcv:0007048|FBdv:00005289	2	0	nucleus | decreased number | embryonic stage	GO head with modifier FBcv:0007048
-FB	GO:0005634|FBcv:0007048|FBdv:00005289|FBcv:0000164	2	0	nucleus | decreased number | embryonic stage | paternal effect	GO head with modifier FBcv:0007048
-FB	GO:0005634|FBdv:00005289|FBcv:0000068	2	0	nucleus | embryonic stage | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005634|FBdv:00005334|FBcv:0000068	2	0	nucleus | embryonic stage 16 | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005634|GO:0048477|FBcv:0000336	2	0	nucleus | oogenesis | somatic clone	unhandled qualifiers: GO:0048477
-FB	GO:0005643|FBcv:0007048|FBdv:00005336	2	0	nuclear pore | decreased number | larval stage	GO head with modifier FBcv:0007048
-FB	GO:0005694|FBcv:0000068	2	0	chromosome | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005739|FBcv:0000068|FBdv:00005342|FBcv:0000336	2	0	mitochondrion | increased number | prepupal stage | somatic clone	GO head with modifier FBcv:0000068
-FB	GO:0005739|FBcv:0000336|FBcv:0000068	2	0	mitochondrion | somatic clone | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005739|FBcv:0007048	2	0	mitochondrion | decreased number | conditional	GO head with modifier FBcv:0007048
-FB	GO:0005764|FBcv:0000068	2	0	lysosome | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005764|FBcv:0000153|FBcv:0000068|FBdv:00005336|FBcv:0007050	2	0	lysosome | cell autonomous | increased number | larval stage | somatic clone - tissue specific	GO head with modifier FBcv:0000068
 FB	GO:0005764|FBcv:0000335|GO:0048477	2	0	lysosome | germline clone | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0005764|FBcv:0007048|FBdv:00005339	2	0	lysosome | decreased number | third instar larval stage	GO head with modifier FBcv:0007048
-FB	GO:0005764|FBcv:0007048|FBdv:00005340	2	0	lysosome | decreased number | early third instar larval stage	GO head with modifier FBcv:0007048
-FB	GO:0005764|FBdv:00005336|FBcv:0000068	2	0	lysosome | larval stage | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005764|GO:0048477|FBcv:0000336	2	0	lysosome | oogenesis | somatic clone	unhandled qualifiers: GO:0048477
-FB	GO:0005768|FBdv:00005369|FBcv:0007048|FBcv:0000336	2	0	endosome | adult stage | decreased number | somatic clone	GO head with modifier FBcv:0007048
-FB	GO:0005770|FBcv:0000068	2	0	late endosome | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005770|FBcv:0000335|GO:0048477	2	0	late endosome | germline clone | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0005771|FBcv:0007049|FBdv:00005336	2	0	multivesicular body | absent | larval stage	unhandled qualifiers: FBcv:0007049
-FB	GO:0005776|FBcv:0000068|FBdv:00005336	2	0	autophagosome | increased number | larval stage	GO head with modifier FBcv:0000068
-FB	GO:0005776|FBcv:0000068|FBdv:00005336|FBcv:0000336	2	0	autophagosome | increased number | larval stage | somatic clone	GO head with modifier FBcv:0000068
-FB	GO:0005776|FBcv:0000153|FBcv:0007048|FBdv:00005336|FBcv:0000336	2	0	autophagosome | cell autonomous | decreased number | larval stage | somatic clone | calorie restriction conditional	GO head with modifier FBcv:0007048
-FB	GO:0005776|FBcv:0007048|FBdv:00005349	2	0	autophagosome | decreased number | pupal stage	GO head with modifier FBcv:0007048
-FB	GO:0005777|FBdv:00005369|FBcv:0000068|FBcv:0000336	2	0	peroxisome | adult stage | increased number | somatic clone	GO head with modifier FBcv:0000068
-FB	GO:0005783|FBdv:00005369|FBcv:0007048|FBcv:0000336	2	0	endoplasmic reticulum | adult stage | decreased number | somatic clone	GO head with modifier FBcv:0007048
-FB	GO:0005788|FBcv:0000068|FBdv:00005336	2	0	endoplasmic reticulum lumen | increased number | larval stage	GO head with modifier FBcv:0000068
 FB	GO:0005794|FBcv:0000335|GO:0048477	2	0	Golgi apparatus | germline clone | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0005794|FBcv:0000336|FBcv:0000068	2	0	Golgi apparatus | somatic clone | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005795|FBcv:0000061	2	0	Golgi stack | ectopic	unhandled qualifiers: FBcv:0000061
-FB	GO:0005811|FBcv:0000068|FBcv:0000333	2	0	lipid droplet | increased number | male	GO head with modifier FBcv:0000068
-FB	GO:0005811|FBcv:0000068|FBdv:00005336	2	0	lipid droplet | increased number | larval stage	GO head with modifier FBcv:0000068
-FB	GO:0005811|FBcv:0007048|FBdv:00005336	2	0	lipid droplet | decreased number | larval stage	GO head with modifier FBcv:0007048
 FB	GO:0005813|FBcv:0000061|FBcv:0000335	2	0	centrosome | ectopic | germline clone	unhandled qualifiers: FBcv:0000061
-FB	GO:0005813|FBcv:0000068|FBdv:00005339	2	0	centrosome | increased number | third instar larval stage	GO head with modifier FBcv:0000068
-FB	GO:0005813|FBdv:00005289|FBcv:0000068	2	0	centrosome | embryonic stage | increased number	GO head with modifier FBcv:0000068
-FB	GO:0005813|FBdv:00005336|FBcv:0000068	2	0	centrosome | larval stage | increased number	GO head with modifier FBcv:0000068
 FB	GO:0005813|GO:0048477	2	0	centrosome | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0005814|FBcv:0007049|FBcv:0000333	2	0	centriole | absent | male	unhandled qualifiers: FBcv:0007049
 FB	GO:0005814|FBcv:0007049|FBdv:00005336	2	0	centriole | absent | larval stage	unhandled qualifiers: FBcv:0007049
@@ -1613,25 +1538,13 @@ FB	GO:0005884|FBcv:0000153|FBcv:0000061|FBcv:0000336	2	0	actin filament | cell a
 FB	GO:0005884|GO:0007283	2	0	actin filament | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0005886|FBcv:0000335|GO:0048477	2	0	plasma membrane | germline clone | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0005912|FBcv:0000061	2	0	adherens junction | ectopic	unhandled qualifiers: FBcv:0000061
-FB	GO:0005912|FBcv:0000068|FBdv:00005336	2	0	adherens junction | increased number | larval stage	GO head with modifier FBcv:0000068
 FB	GO:0005930|FBcv:0007049	2	0	axoneme | absent	unhandled qualifiers: FBcv:0007049
-FB	GO:0008021|FBcv:0000336|FBcv:0000068	2	0	synaptic vesicle | somatic clone | increased number	GO head with modifier FBcv:0000068
-FB	GO:0008021|FBcv:0007048|FBdv:00005341	2	0	synaptic vesicle | decreased number | wandering third instar larval stage	GO head with modifier FBcv:0007048
 FB	GO:0016007|FBcv:0007048|GO:0007283	2	0	mitochondrial derivative | decreased number | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0016028|FBcv:0000061	2	0	rhabdomere | ectopic	unhandled qualifiers: FBcv:0000061
-FB	GO:0016028|FBcv:0000068	2	0	rhabdomere | increased number	GO head with modifier FBcv:0000068
-FB	GO:0016028|FBcv:0000336|FBcv:0000068	2	0	rhabdomere | somatic clone | increased number	GO head with modifier FBcv:0000068
-FB	GO:0030061|FBdv:00005369|FBcv:0007048	2	0	mitochondrial crista | adult stage | decreased number	GO head with modifier FBcv:0007048
 FB	GO:0030141|FBcv:0000061|FBdv:00005342	2	0	secretory granule | ectopic | prepupal stage	unhandled qualifiers: FBcv:0000061
-FB	GO:0030175|FBcv:0000068|FBdv:00005339	2	0	filopodium | increased number | third instar larval stage	GO head with modifier FBcv:0000068
-FB	GO:0030175|FBdv:00007001|FBcv:0000068|FBcv:0007050	2	0	filopodium | P-stage | increased number | somatic clone - tissue specific	GO head with modifier FBcv:0000068
 FB	GO:0030424|FBcv:0000059|FBdv:00005289	2	0	axon | dorsal | embryonic stage	unhandled qualifiers: FBcv:0000059
-FB	GO:0030424|FBcv:0007048	2	0	axon | decreased number	GO head with modifier FBcv:0007048
-FB	GO:0030424|FBdv:00005369|FBcv:0007048|FBcv:0007050	2	0	axon | adult stage | decreased number | somatic clone - tissue specific	GO head with modifier FBcv:0007048
 FB	GO:0030425|FBcv:0000061	2	0	dendrite | ectopic	unhandled qualifiers: FBcv:0000061
 FB	GO:0030425|FBdv:00005289|FBcv:0000063	2	0	dendrite | embryonic stage | lateral	unhandled qualifiers: FBcv:0000063
-FB	GO:0031143|FBcv:0000068|FBdv:00005336	2	0	pseudopodium | increased number | larval stage	GO head with modifier FBcv:0000068
-FB	GO:0031410|FBcv:0000068|FBdv:00005336	2	0	cytoplasmic vesicle | increased number | larval stage	GO head with modifier FBcv:0000068
 FB	GO:0031410|FBcv:0007048|FBcv:0000335|GO:0048477	2	0	cytoplasmic vesicle | decreased number | germline clone | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0031941|FBcv:0000335|GO:0048477	2	0	filamentous actin | germline clone | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0031965|GO:0007283	2	0	nuclear membrane | spermatogenesis	unhandled qualifiers: GO:0007283
@@ -1641,48 +1554,17 @@ FB	GO:0036157|FBcv:0007049|FBcv:0000333	2	0	outer dynein arm | absent | male	unh
 FB	GO:0042600|FBcv:0000053|FBcv:0000161	2	0	egg chorion | anterior | maternal effect	unhandled qualifiers: FBcv:0000053
 FB	GO:0042600|FBcv:0000059	2	0	egg chorion | dorsal	unhandled qualifiers: FBcv:0000059
 FB	GO:0042645|GO:0007283	2	0	mitochondrial nucleoid | spermatogenesis	unhandled qualifiers: GO:0007283
-FB	GO:0042718|FBcv:0007048|FBcv:0000335	2	0	yolk granule | decreased number | germline clone	GO head with modifier FBcv:0007048
 FB	GO:0042995|GO:0048477	2	0	cell projection | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0043005|FBdv:00005369|FBcv:0000061	2	0	neuron projection | adult stage | ectopic	unhandled qualifiers: FBcv:0000061
-FB	GO:0043195|FBdv:00005337|FBcv:0000068	2	0	terminal bouton | first instar larval stage | increased number	GO head with modifier FBcv:0000068
-FB	GO:0044292|FBcv:0007048|FBdv:00005336	2	0	dendrite terminus | decreased number | larval stage	GO head with modifier FBcv:0007048
-FB	GO:0044303|FBdv:00005289|FBcv:0000068	2	0	axon collateral | embryonic stage | increased number	GO head with modifier FBcv:0000068
-FB	GO:0044303|FBdv:00005369|FBcv:0000068	2	0	axon collateral | adult stage | increased number	GO head with modifier FBcv:0000068
-FB	GO:0044307|FBcv:0007048|FBcv:0000336	2	0	dendritic branch | decreased number | somatic clone	GO head with modifier FBcv:0007048
-FB	GO:0044307|FBcv:0007048|FBdv:00005336	2	0	dendritic branch | decreased number | larval stage	GO head with modifier FBcv:0007048
-FB	GO:0044307|FBcv:0007048|FBdv:00005339	2	0	dendritic branch | decreased number | third instar larval stage	GO head with modifier FBcv:0007048
-FB	GO:0044754|FBcv:0000068|FBdv:00005336	2	0	autolysosome | increased number | larval stage	GO head with modifier FBcv:0000068
-FB	GO:0044754|FBcv:0000068|FBdv:00005339	2	0	autolysosome | increased number | third instar larval stage	GO head with modifier FBcv:0000068
-FB	GO:0044754|FBcv:0007048|FBdv:00005336	2	0	autolysosome | decreased number | larval stage | nutrition conditional	GO head with modifier FBcv:0007048
 FB	GO:0045169|FBcv:0000335|GO:0048477	2	0	fusome | germline clone | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0045169|GO:0048477	2	0	fusome | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0045170|FBcv:0000068	2	0	spectrosome | increased number	GO head with modifier FBcv:0000068
-FB	GO:0045170|FBcv:0000335|FBcv:0000068	2	0	spectrosome | germline clone | increased number	GO head with modifier FBcv:0000068
-FB	GO:0045202|FBcv:0000068|FBdv:00005341	2	0	synapse | increased number | wandering third instar larval stage	GO head with modifier FBcv:0000068
-FB	GO:0045202|FBcv:0007048	2	0	synapse | decreased number	GO head with modifier FBcv:0007048
-FB	GO:0045202|FBdv:00005369|FBcv:0000068	2	0	synapse | adult stage | increased number	GO head with modifier FBcv:0000068
-FB	GO:0045202|FBdv:00005369|FBcv:0007048	2	0	synapse | adult stage | decreased number	GO head with modifier FBcv:0007048
-FB	GO:0045277|FBcv:0007048|FBdv:00005349	2	0	respiratory chain complex IV | decreased number | pupal stage	GO head with modifier FBcv:0007048
-FB	GO:0045335|FBcv:0000068|FBdv:00005336	2	0	phagocytic vesicle | increased number | larval stage	GO head with modifier FBcv:0000068
 FB	GO:0045495|FBcv:0000335	2	0	pole plasm | germline clone	GO:0045495 unknown or obsolete in GO
-FB	GO:0048786|FBcv:0000068|FBdv:00005336	2	0	presynaptic active zone | increased number | larval stage	GO head with modifier FBcv:0000068
-FB	GO:0048786|FBcv:0000068|FBdv:00005349	2	0	presynaptic active zone | increased number | pupal stage	GO head with modifier FBcv:0000068
-FB	GO:0048786|FBdv:00005369|FBcv:0007048	2	0	presynaptic active zone | adult stage | decreased number	GO head with modifier FBcv:0007048
 FB	GO:0060170|FBcv:0007049|FBdv:00005369	2	0	ciliary membrane | absent | adult stage	unhandled qualifiers: FBcv:0007049
-FB	GO:0061176|FBcv:0007048|FBdv:00005339	2	0	type Ib terminal bouton | decreased number | third instar larval stage	GO head with modifier FBcv:0007048
-FB	GO:0061177|FBcv:0007048|FBdv:00005336	2	0	type Is terminal bouton | decreased number | larval stage	GO head with modifier FBcv:0007048
 FB	GO:0070865|GO:0007283	2	0	investment cone | spermatogenesis	unhandled qualifiers: GO:0007283
 FB	GO:0072686|GO:0048477	2	0	mitotic spindle | oogenesis	unhandled qualifiers: GO:0048477
 FB	GO:0072687|GO:0048477	2	0	meiotic spindle | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0097387|FBcv:0007048|FBcv:0007050	2	0	capitate projection | decreased number | somatic clone - tissue specific	GO head with modifier FBcv:0007048
-FB	GO:0097447|FBcv:0007048|FBdv:00005289	2	0	dendritic tree | decreased number | embryonic stage	GO head with modifier FBcv:0007048
 FB	GO:0097540|FBcv:0007049	2	0	axonemal central pair | absent	unhandled qualifiers: FBcv:0007049
-FB	GO:0098793|FBdv:00005369|FBcv:0007048	2	0	presynapse | adult stage | decreased number	GO head with modifier FBcv:0007048
 FB	GO:0098858|GO:0048477|FBdv:00004886	2	0	actin-based cell projection | oogenesis | oogenesis	unhandled qualifiers: GO:0048477
-FB	GO:0099503|FBcv:0007048|FBdv:00005289	2	0	secretory vesicle | decreased number | embryonic stage	GO head with modifier FBcv:0007048
-FB	GO:0099503|FBdv:00005369|FBcv:0000336|FBcv:0000068	2	0	secretory vesicle | adult stage | somatic clone | increased number	GO head with modifier FBcv:0000068
-FB	GO:1903561|FBcv:0007048|FBdv:00005289	2	0	extracellular vesicle | decreased number | embryonic stage	GO head with modifier FBcv:0007048
-FB	GO:1903561|FBcv:0007048|FBdv:00005336	2	0	extracellular vesicle | decreased number | larval stage	GO head with modifier FBcv:0007048
 FB	SO:0000340|FBcv:0000335|FBcv:0000161|FBdv:00005290	2	0	chromosome | germline clone | maternal effect | pre-blastoderm stage	unhandled head term prefix SO
 FB	SO:0000340|FBdv:00005283	2	0	chromosome | oogenesis stage S14	unhandled head term prefix SO
 FB	SO:0000340|FBdv:00005290	2	0	chromosome | pre-blastoderm stage	unhandled head term prefix SO

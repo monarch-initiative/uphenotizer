@@ -8,9 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/monarch-initiative/uphenotizer/release/dpo-ext-bridge.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/monarch-initiative/uphenotizer/releases/2026-10-31/dpo-ext-bridge.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/monarch-initiative/uphenotizer/releases/2026-11-01/dpo-ext-bridge.owl"/>
         <terms:title>DPO-ext: FlyBase phenotypes pre-composed from Alliance annotations: uPheno bridge</terms:title>
-        <owl:versionInfo>2026-10-31</owl:versionInfo>
+        <owl:versionInfo>2026-11-01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -979,6 +979,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0046250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0046250"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0046252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UPHENO_0049952 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0049952"/>
@@ -1000,6 +1012,24 @@
     <!-- http://purl.obolibrary.org/obo/UPHENO_0050738 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0050738"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0063670 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0063670"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0063672 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0063674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0063674"/>
     
 
 
@@ -1075,6 +1105,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0063981 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0063981"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UPHENO_0064031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0064031"/>
@@ -1117,6 +1153,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0077337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0077337"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0077386 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0077386"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UPHENO_0078653 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0078653"/>
@@ -1144,6 +1192,12 @@
     <!-- http://purl.obolibrary.org/obo/UPHENO_0080011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0080011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0080534 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0080534"/>
     
 
 
@@ -1183,6 +1237,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0082676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0082676"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0082677 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0082677"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0083034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0083034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0083035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0083035"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UPHENO_0083072 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0083072"/>
@@ -1198,6 +1276,12 @@
     <!-- http://purl.obolibrary.org/obo/UPHENO_0083202 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0083202"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0084206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0084206"/>
     
 
 
@@ -1330,6 +1414,18 @@
     <!-- http://purl.obolibrary.org/obo/UPHENO_0088333 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0088333"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0088532 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0088532"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UPHENO_0088540 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
     
 
 
@@ -1613,14 +1709,6 @@
 
     <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1000034 -->
-
-    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002525"/>
     </owl:Class>
     
 
@@ -23709,47 +23797,10 @@
     
 
 
-    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002026 -->
-
-    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002027 -->
-
-    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002028 -->
 
     <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002029 -->
-
-    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002030 -->
-
-    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1002030">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
     </owl:Class>
     
@@ -37072,6 +37123,671 @@
     <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003298">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0006889"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003299 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0077386"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0082544"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003300 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003301 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088532"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003302 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003302">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063674"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003303 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003303">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0082545"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003304 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0077386"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003305 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046250"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003306 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003306">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063670"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003307 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003307">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0084206"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003308 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003309 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003310 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003311 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003312 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0082676"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003313 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003313">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0083034"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003314 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003314">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003315 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003315">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003316 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003317 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003318 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0082677"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003319 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0080534"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003320 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0083035"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003321 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003322 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003323 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0005141"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003324 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003324">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0082546"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003325 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003325">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003326 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0077337"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003327 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003327">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0077337"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003328 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003329 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003329">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003330 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003330">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0082544"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003331 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003332 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003333 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003333">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003334 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003335 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003336 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003337 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063981"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003338 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003339 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003340 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003341 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003342 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003343 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003344 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003345 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003345">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0084206"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003346 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003346">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003347 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003347">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003348 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003348">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003349 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003349">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003350 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003350">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0002525"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003351 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003351">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003352 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003352">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003353 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003354 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003355 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003355">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003356 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003356">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003357 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003358 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003358">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003359 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003360 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0006899"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003361 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003361">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003362 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003362">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0004523"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0035160"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003363 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003363">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003364 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0014285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063672"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0086172"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003365 -->
+
+    <owl:Class rdf:about="https://w3id.org/monarch-initiative/entity/PHENOTYPE_1003365">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0046252"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0063787"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UPHENO_0088540"/>
     </owl:Class>
 </rdf:RDF>
 

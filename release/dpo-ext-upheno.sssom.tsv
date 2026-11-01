@@ -41,7 +41,6 @@ PHENOTYPE:1000030	abnormal abdominal segment 11	skos:broadMatch	UPHENO:0003025	s
 PHENOTYPE:1000031	abnormal telson	skos:broadMatch	UPHENO:0003025	subdivision of organism along main body axis phenotype	semapv:LogicalReasoning
 PHENOTYPE:1000032	abnormal egg	skos:broadMatch	UPHENO:0002525	anatomical structure phenotype	semapv:LogicalReasoning
 PHENOTYPE:1000033	abnormally decreased number of egg	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
-PHENOTYPE:1000034	abnormal yolk	skos:broadMatch	UPHENO:0002525	anatomical structure phenotype	semapv:LogicalReasoning
 PHENOTYPE:1000035	abnormal chorion	skos:broadMatch	UPHENO:0002573	acellular anatomical structure phenotype	semapv:LogicalReasoning
 PHENOTYPE:1000035	abnormal chorion	skos:broadMatch	UPHENO:0002902	multi-tissue structure phenotype	semapv:LogicalReasoning
 PHENOTYPE:1000036	abnormal inner chorionic layer	skos:broadMatch	UPHENO:0002573	acellular anatomical structure phenotype	semapv:LogicalReasoning
@@ -8189,17 +8188,8 @@ PHENOTYPE:1002023	abnormal neuron	skos:broadMatch	UPHENO:0086172	cell phenotype	
 PHENOTYPE:1002024	abnormally decreased number of neuron	skos:broadMatch	UPHENO:0085245	decreased number of neuron	semapv:LogicalReasoning
 PHENOTYPE:1002025	abnormally increased number of neuron	skos:broadMatch	UPHENO:0079539	increased number of cell	semapv:LogicalReasoning
 PHENOTYPE:1002025	abnormally increased number of neuron	skos:broadMatch	UPHENO:0085986	number of anatomical enitites of type neuron phenotype	semapv:LogicalReasoning
-PHENOTYPE:1002026	abnormal dendrite	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
-PHENOTYPE:1002026	abnormal dendrite	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
-PHENOTYPE:1002027	abnormal dendritic tree	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
-PHENOTYPE:1002027	abnormal dendritic tree	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
 PHENOTYPE:1002028	abnormal neurite	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
 PHENOTYPE:1002028	abnormal neurite	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
-PHENOTYPE:1002029	abnormal synapse	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
-PHENOTYPE:1002029	abnormal synapse	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
-PHENOTYPE:1002030	abnormally increased number of synapse	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
-PHENOTYPE:1002030	abnormally increased number of synapse	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
-PHENOTYPE:1002030	abnormally increased number of synapse	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
 PHENOTYPE:1002031	abnormal end plate	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
 PHENOTYPE:1002031	abnormal end plate	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
 PHENOTYPE:1002032	abnormal bouton	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
@@ -12645,3 +12635,199 @@ PHENOTYPE:1003297	abnormal growth cone filopodium	skos:broadMatch	UPHENO:0006889
 PHENOTYPE:1003297	abnormal growth cone filopodium	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
 PHENOTYPE:1003298	abnormal mating projection actin fusion focus	skos:broadMatch	UPHENO:0006889	cellular_component phenotype	semapv:LogicalReasoning
 PHENOTYPE:1003298	abnormal mating projection actin fusion focus	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003299	increased number of mitochondrial chromosome	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003299	increased number of mitochondrial chromosome	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003299	increased number of mitochondrial chromosome	skos:broadMatch	UPHENO:0077386	number of chromosome phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003299	increased number of mitochondrial chromosome	skos:broadMatch	UPHENO:0082544	mitochondrion phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003300	increased number of ruffle	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003300	increased number of ruffle	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003300	increased number of ruffle	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003301	abnormally decreased number of nucleus	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003301	abnormally decreased number of nucleus	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003301	abnormally decreased number of nucleus	skos:broadMatch	UPHENO:0088532	number of anatomical enitites of type cell nucleus phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003302	increased number of nucleus	semapv:crossSpeciesExactMatch	UPHENO:0063674	increased number of cell nucleus	semapv:LogicalReasoning
+PHENOTYPE:1003303	abnormally decreased number of nuclear pore	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003303	abnormally decreased number of nuclear pore	skos:broadMatch	UPHENO:0082545	nuclear pore phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003304	increased number of chromosome	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003304	increased number of chromosome	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003304	increased number of chromosome	skos:broadMatch	UPHENO:0077386	number of chromosome phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003305	abnormally decreased number of mitochondrion	semapv:crossSpeciesExactMatch	UPHENO:0046250	decreased number of mitochondrion	semapv:LogicalReasoning
+PHENOTYPE:1003306	increased number of mitochondrion	semapv:crossSpeciesExactMatch	UPHENO:0063670	increased number of mitochondrion	semapv:LogicalReasoning
+PHENOTYPE:1003307	abnormally decreased number of lysosome	skos:broadMatch	UPHENO:0084206	decreased number of vacuole	semapv:LogicalReasoning
+PHENOTYPE:1003308	increased number of lysosome	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003308	increased number of lysosome	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003308	increased number of lysosome	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003309	abnormally decreased number of endosome	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003309	abnormally decreased number of endosome	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003309	abnormally decreased number of endosome	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003309	abnormally decreased number of endosome	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003310	increased number of late endosome	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003310	increased number of late endosome	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003310	increased number of late endosome	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003310	increased number of late endosome	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003311	increased number of vacuole	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003311	increased number of vacuole	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003311	increased number of vacuole	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003312	abnormally decreased number of autophagosome	semapv:crossSpeciesExactMatch	UPHENO:0082676	decreased number of autophagosome	semapv:LogicalReasoning
+PHENOTYPE:1003313	increased number of autophagosome	semapv:crossSpeciesExactMatch	UPHENO:0083034	increased number of autophagosome	semapv:LogicalReasoning
+PHENOTYPE:1003314	increased number of peroxisome	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003314	increased number of peroxisome	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003314	increased number of peroxisome	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003315	abnormally decreased number of endoplasmic reticulum	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003315	abnormally decreased number of endoplasmic reticulum	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003315	abnormally decreased number of endoplasmic reticulum	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003316	increased number of endoplasmic reticulum lumen	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003316	increased number of endoplasmic reticulum lumen	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003316	increased number of endoplasmic reticulum lumen	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003317	increased number of Golgi apparatus	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003317	increased number of Golgi apparatus	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003317	increased number of Golgi apparatus	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003318	abnormally decreased number of lipid droplet	semapv:crossSpeciesExactMatch	UPHENO:0082677	decreased number of lipid droplet	semapv:LogicalReasoning
+PHENOTYPE:1003319	increased number of lipid droplet	semapv:crossSpeciesExactMatch	UPHENO:0080534	increased number of lipid droplet	semapv:LogicalReasoning
+PHENOTYPE:1003320	increased number of centrosome	semapv:crossSpeciesExactMatch	UPHENO:0083035	increased number of centrosome	semapv:LogicalReasoning
+PHENOTYPE:1003321	abnormally decreased number of centriole	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003321	abnormally decreased number of centriole	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003321	abnormally decreased number of centriole	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003322	increased number of axonemal microtubule	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003322	increased number of axonemal microtubule	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003322	increased number of axonemal microtubule	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003323	abnormally decreased number of microvillus	skos:broadMatch	UPHENO:0005141	epithelium phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003323	abnormally decreased number of microvillus	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003323	abnormally decreased number of microvillus	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003323	abnormally decreased number of microvillus	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003324	increased number of adherens junction	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003324	increased number of adherens junction	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003324	increased number of adherens junction	skos:broadMatch	UPHENO:0082546	adherens junction phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003325	abnormally decreased number of cilium	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003325	abnormally decreased number of cilium	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003326	abnormally decreased number of synaptic vesicle	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003326	abnormally decreased number of synaptic vesicle	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003326	abnormally decreased number of synaptic vesicle	skos:broadMatch	UPHENO:0077337	number of synaptic vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003327	increased number of synaptic vesicle	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003327	increased number of synaptic vesicle	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003327	increased number of synaptic vesicle	skos:broadMatch	UPHENO:0077337	number of synaptic vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003328	abnormally decreased number of rhabdomere	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003328	abnormally decreased number of rhabdomere	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003329	increased number of rhabdomere	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003329	increased number of rhabdomere	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003330	abnormally decreased number of mitochondrial crista	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003330	abnormally decreased number of mitochondrial crista	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003330	abnormally decreased number of mitochondrial crista	skos:broadMatch	UPHENO:0082544	mitochondrion phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003331	increased number of filopodium	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003331	increased number of filopodium	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003331	increased number of filopodium	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003332	abnormally decreased number of axon	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003332	abnormally decreased number of axon	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003332	abnormally decreased number of axon	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003332	abnormally decreased number of axon	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003333	increased number of dendrite	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003333	increased number of dendrite	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003333	increased number of dendrite	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003333	increased number of dendrite	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003334	increased number of pseudopodium	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003334	increased number of pseudopodium	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003335	increased number of cytoplasmic vesicle	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003335	increased number of cytoplasmic vesicle	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003335	increased number of cytoplasmic vesicle	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003335	increased number of cytoplasmic vesicle	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003336	increased number of vesicle	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003336	increased number of vesicle	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003336	increased number of vesicle	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003337	abnormally decreased number of ribonucleoprotein granule	skos:broadMatch	UPHENO:0063981	decreased number of supramolecular complex	semapv:LogicalReasoning
+PHENOTYPE:1003337	abnormally decreased number of ribonucleoprotein granule	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003338	abnormally decreased number of yolk granule	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003338	abnormally decreased number of yolk granule	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003338	abnormally decreased number of yolk granule	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003339	increased number of terminal bouton	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003339	increased number of terminal bouton	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003339	increased number of terminal bouton	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003339	increased number of terminal bouton	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003340	increased number of axon terminus	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003340	increased number of axon terminus	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003340	increased number of axon terminus	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003340	increased number of axon terminus	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003341	abnormally decreased number of dendrite terminus	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003341	abnormally decreased number of dendrite terminus	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003341	abnormally decreased number of dendrite terminus	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003341	abnormally decreased number of dendrite terminus	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003342	increased number of axon collateral	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003342	increased number of axon collateral	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003342	increased number of axon collateral	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003342	increased number of axon collateral	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003343	abnormally decreased number of dendritic branch	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003343	abnormally decreased number of dendritic branch	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003343	abnormally decreased number of dendritic branch	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003343	abnormally decreased number of dendritic branch	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003344	increased number of dendritic branch	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003344	increased number of dendritic branch	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003344	increased number of dendritic branch	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003344	increased number of dendritic branch	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003345	abnormally decreased number of autolysosome	skos:broadMatch	UPHENO:0084206	decreased number of vacuole	semapv:LogicalReasoning
+PHENOTYPE:1003346	increased number of autolysosome	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003346	increased number of autolysosome	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003346	increased number of autolysosome	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003347	increased number of spectrosome	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003347	increased number of spectrosome	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003347	increased number of spectrosome	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003348	abnormally decreased number of synapse	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003348	abnormally decreased number of synapse	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003349	increased number of synapse	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003349	increased number of synapse	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003350	abnormally decreased number of respiratory chain complex IV	skos:broadMatch	UPHENO:0002525	anatomical structure phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003350	abnormally decreased number of respiratory chain complex IV	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003351	increased number of phagocytic vesicle	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003351	increased number of phagocytic vesicle	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003351	increased number of phagocytic vesicle	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003351	increased number of phagocytic vesicle	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003352	abnormally decreased number of pigment granule	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003352	abnormally decreased number of pigment granule	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003352	abnormally decreased number of pigment granule	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003352	abnormally decreased number of pigment granule	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003353	abnormally decreased number of presynaptic active zone	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003353	abnormally decreased number of presynaptic active zone	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003353	abnormally decreased number of presynaptic active zone	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003353	abnormally decreased number of presynaptic active zone	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003354	increased number of presynaptic active zone	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003354	increased number of presynaptic active zone	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003354	increased number of presynaptic active zone	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003354	increased number of presynaptic active zone	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003355	abnormally decreased number of type Ib terminal bouton	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003355	abnormally decreased number of type Ib terminal bouton	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003355	abnormally decreased number of type Ib terminal bouton	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003355	abnormally decreased number of type Ib terminal bouton	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003356	increased number of type Ib terminal bouton	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003356	increased number of type Ib terminal bouton	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003356	increased number of type Ib terminal bouton	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003356	increased number of type Ib terminal bouton	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003357	abnormally decreased number of type Is terminal bouton	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003357	abnormally decreased number of type Is terminal bouton	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003357	abnormally decreased number of type Is terminal bouton	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003357	abnormally decreased number of type Is terminal bouton	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003358	abnormally decreased number of sperm individualization complex	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003358	abnormally decreased number of sperm individualization complex	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003358	abnormally decreased number of sperm individualization complex	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003359	abnormally decreased number of investment cone	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003359	abnormally decreased number of investment cone	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003359	abnormally decreased number of investment cone	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003360	abnormally decreased number of capitate projection	skos:broadMatch	UPHENO:0006899	glial cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003360	abnormally decreased number of capitate projection	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003360	abnormally decreased number of capitate projection	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003361	abnormally decreased number of dendritic tree	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003361	abnormally decreased number of dendritic tree	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003361	abnormally decreased number of dendritic tree	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003361	abnormally decreased number of dendritic tree	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003362	abnormally decreased number of presynapse	skos:broadMatch	UPHENO:0004523	nervous system phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003362	abnormally decreased number of presynapse	skos:broadMatch	UPHENO:0035160	decreased number of anatomical structure in the multicellular organism	semapv:LogicalReasoning
+PHENOTYPE:1003362	abnormally decreased number of presynapse	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003362	abnormally decreased number of presynapse	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003363	abnormally decreased number of secretory vesicle	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003363	abnormally decreased number of secretory vesicle	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003363	abnormally decreased number of secretory vesicle	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003363	abnormally decreased number of secretory vesicle	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003364	increased number of secretory vesicle	skos:broadMatch	UPHENO:0014285	increased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003364	increased number of secretory vesicle	skos:broadMatch	UPHENO:0063672	increased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003364	increased number of secretory vesicle	skos:broadMatch	UPHENO:0086172	cell phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003364	increased number of secretory vesicle	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning
+PHENOTYPE:1003365	abnormally decreased number of extracellular vesicle	skos:broadMatch	UPHENO:0046252	decreased number of cellular_component	semapv:LogicalReasoning
+PHENOTYPE:1003365	abnormally decreased number of extracellular vesicle	skos:broadMatch	UPHENO:0063787	decreased number of anatomical structure	semapv:LogicalReasoning
+PHENOTYPE:1003365	abnormally decreased number of extracellular vesicle	skos:broadMatch	UPHENO:0088540	number of anatomical enitites of type vesicle phenotype	semapv:LogicalReasoning

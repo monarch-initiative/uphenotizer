@@ -8,9 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/monarch-initiative/uphenotizer/release/apo-ext-bridge.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/monarch-initiative/uphenotizer/releases/2026-10-31/apo-ext-bridge.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/monarch-initiative/uphenotizer/releases/2026-11-01/apo-ext-bridge.owl"/>
         <terms:title>APO-ext: SGD phenotypes pre-composed from Alliance annotations: uPheno bridge</terms:title>
-        <owl:versionInfo>2026-10-31</owl:versionInfo>
+        <owl:versionInfo>2026-11-01</owl:versionInfo>
     </owl:Ontology>
     
 

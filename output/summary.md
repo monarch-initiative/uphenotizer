@@ -4,10 +4,10 @@
 
 | source | status | units | annotations | share of annotations |
 |---|---|---:|---:|---:|
-| FB | routed | 7593 | 123540 | 40.9% |
+| FB | routed | 7711 | 123914 | 41.0% |
 | FB | covered_upstream | 2831 | 164487 | 54.4% |
 | FB | skipped | 1 | 7082 | 2.3% |
-| FB | unrouted | 1225 | 7003 | 2.3% |
+| FB | unrouted | 1107 | 6629 | 2.2% |
 | SGD | routed | 2418 | 182526 | 46.3% |
 | SGD | skipped | 296 | 16551 | 4.2% |
 | SGD | unrouted | 3069 | 195192 | 49.5% |
@@ -19,17 +19,19 @@
 | pattern | rows | existing uPheno ID | needs minting | pending |
 |---|---:|---:|---:|---:|
 | abnormalAbsenceOfBiologicalProcess | 48 | 8 | 40 | 0 |
-| abnormalAnatomicalEntity | 2702 | 0 | 2702 | 0 |
+| abnormalAnatomicalEntity | 2698 | 0 | 2698 | 0 |
 | abnormalBiologicalProcess | 70 | 30 | 40 | 0 |
 | abnormalCellularComponent | 274 | 5 | 269 | 0 |
 | abnormallyArrestedBiologicalProcess | 15 | 7 | 8 | 0 |
 | abnormallyDecreasedLevelOfChemicalEntity | 293 | 34 | 259 | 0 |
 | abnormallyDecreasedNumberOfAnatomicalEntity | 80 | 0 | 80 | 0 |
+| abnormallyDecreasedNumberOfCellularComponent | 33 | 3 | 30 | 0 |
 | abnormallyDecreasedRateOfBiologicalProcess | 21 | 5 | 16 | 0 |
 | abnormallyDecreasedResistanceOfWholeOrganismToChemicalEntity | 757 | 94 | 663 | 0 |
 | abnormallyDelayedBiologicalProcess | 35 | 5 | 30 | 0 |
 | abnormallyIncreasedLevelOfChemicalEntity | 372 | 35 | 337 | 0 |
-| abnormallyIncreasedNumberOfAnatomicalEntity | 217 | 0 | 217 | 0 |
+| abnormallyIncreasedNumberOfAnatomicalEntity | 216 | 0 | 216 | 0 |
+| abnormallyIncreasedNumberOfCellularComponent | 34 | 5 | 29 | 0 |
 | abnormallyIncreasedRateOfBiologicalProcess | 19 | 5 | 14 | 0 |
 | abnormallyIncreasedResistanceOfWholeOrganismToChemicalEntity | 455 | 55 | 400 | 0 |
 | abnormallyPrematureBiologicalProcess | 11 | 1 | 10 | 0 |
@@ -56,27 +58,27 @@
 
 ## Component IDs
 
-| component | minted | deprecated | reactivated |
+| component | classes | minted this run | not used by current annotations |
 |---|---:|---:|---:|
-| dpo-ext | 0 | 0 | 0 |
-| apo-ext | 0 | 0 | 0 |
+| dpo-ext | 3361 | 0 | 0 |
+| apo-ext | 2076 | 0 | 0 |
 
 ## Components and uPheno bridges
 
-| component | active | deprecated | equivalent to UPHENO | grouped under UPHENO | no UPHENO grouping | with in-component parent |
-|---|---:|---:|---:|---:|---:|---:|
-| dpo-ext | 3299 | 0 | 15 | 3284 | 0 | 3232 |
-| apo-ext | 2076 | 0 | 273 | 1803 | 0 | 1981 |
+| component | classes | equivalent to UPHENO | grouped under UPHENO | no UPHENO grouping | with in-component parent |
+|---|---:|---:|---:|---:|---:|
+| dpo-ext | 3361 | 23 | 3338 | 0 | 3294 |
+| apo-ext | 2076 | 273 | 1803 | 0 | 1981 |
 
 Most frequent uPheno groupings, dpo-ext:
 
-- 1334 × `UPHENO:0086172` cell phenotype
+- 1369 × `UPHENO:0086172` cell phenotype
 - 1055 × `UPHENO:0003025` subdivision of organism along main body axis phenotype
 - 673 × `UPHENO:0002548` ectoderm-derived structure phenotype
 - 596 × `UPHENO:0002976` organ system subdivision phenotype
 - 583 × `UPHENO:0004064` integumental system phenotype
 - 550 × `UPHENO:0002844` head phenotype
-- 424 × `UPHENO:0004523` nervous system phenotype
+- 435 × `UPHENO:0004523` nervous system phenotype
 - 367 × `UPHENO:0002902` multi-tissue structure phenotype
 - 353 × `UPHENO:0002963` anatomical system phenotype
 - 344 × `UPHENO:0075949` late embryo phenotype
@@ -93,3 +95,7 @@ Most frequent uPheno groupings, apo-ext:
 - 36 × `UPHENO:0046286` amino acid level phenotype
 - 29 × `UPHENO:0048756` increased level of phospholipid
 - 27 × `UPHENO:0048763` increased level of lipid
+
+### Duplicate labels within a component
+
+None.
