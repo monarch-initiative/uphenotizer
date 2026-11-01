@@ -5,12 +5,16 @@ superclasses and named equivalents (ROBOT ``reason --axiom-generators "SubClass 
 """
 
 import csv
+import re
 import sys
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from pathlib import Path
 
 UPHENO_PREFIX = "UPHENO:"
+# PHENIO's upheno:extract-upheno-relations (monarch-robot-plugins, UphenoUtils.processHasPart) links a
+# phenotype to the filler of inheres_in / inheres_in_part_of inside its has_part definition.
+_BEARER = re.compile(r"\(RO:(?:0000052|0002314) some ([^\s()]+)\)")
 
 
 def is_upheno(c: str) -> bool:
@@ -26,6 +30,7 @@ class Hierarchy:
     supers: dict[str, set[str]] = field(default_factory=dict)
     equivs: dict[str, set[str]] = field(default_factory=dict)
     labels: dict[str, str] = field(default_factory=dict)
+    defs: dict[str, list[str]] = field(default_factory=dict)  # anonymous equivalents, own classes
     _anc: dict[str, frozenset] = field(default_factory=dict, repr=False)
 
     @classmethod
@@ -44,7 +49,14 @@ class Hierarchy:
                     h.supers[cid] = s
                 if e := _named(eq):
                     h.equivs[cid] = e
+                if cid.startswith("http") and eq:  # our classes have full-IRI IDs
+                    h.defs[cid] = [x for x in eq.split("|") if " some " in x]
         return h
+
+    def bearers(self, c: str) -> set[str]:
+        """Named bearers of ``c``'s logical definition (has_part some (... inheres_in(_part_of) X))."""
+        return {m.group(1) for d in self.defs.get(c, []) if d.startswith("BFO:0000051 some")
+                for m in _BEARER.finditer(d)}
 
     def ancestors(self, c: str) -> frozenset:
         """All strict named ancestors (iterative, memoised)."""

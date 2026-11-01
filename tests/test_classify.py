@@ -49,6 +49,22 @@ def test_nearest_in_component_through_upheno(tmp_path):
     assert h.nearest(E + "1", lambda c: c.startswith(E)) == {E + "2"}
 
 
+def test_bearers_follow_phenio_rule(tmp_path):
+    h = h_from(tmp_path, [
+        [E + "1", "", "UPHENO:1",
+         ("BFO:0000051 some (PATO:0000001 and (RO:0002314 some FBbt:00005110) and "
+         "(RO:0002573 some PATO:0000460))")],
+        # resistance: bearer is the organism; the chemical (towards, RO:0002503) is not a bearer
+        [E + "2", "", "UPHENO:1",
+         ("BFO:0000051 some (PATO:0001651 and (RO:0000052 some UBERON:0000468) and "
+         "(RO:0002503 some CHEBI:29699) and (RO:0002573 some PATO:0000460))|UPHENO:9")],
+        ["UPHENO:9", "", "UPHENO:1", "BFO:0000051 some (PATO:1 and (RO:0000052 some X:1))"],
+    ])
+    assert h.bearers(E + "1") == {"FBbt:00005110"}
+    assert h.bearers(E + "2") == {"UBERON:0000468"}
+    assert h.bearers("UPHENO:9") == set()  # only our own classes are tracked
+
+
 def test_exact(tmp_path):
     h = h_from(tmp_path, [[E + "1", "", "UPHENO:1", "UPHENO:7|ZP:3"]])
     assert h.exact(E + "1", is_upheno) == {"UPHENO:7"}
