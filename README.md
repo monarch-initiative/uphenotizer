@@ -159,10 +159,10 @@ The repo must allow GitHub Actions to create pull requests.
 
 ## Status
 
-- **Built end to end.** The first release (2026-10-31) has 3,299 DPO-ext and 2,076 APO-ext classes.
+- **Built end to end.** The current release (2026-11-01) has 3,361 DPO-ext and 2,076 APO-ext classes.
   - 98% of FlyBase annotations are handled: 41% go into the components and 54% are already DPO classes.
   - 46% of SGD annotations are handled.
-  - Every class has a uPheno grouping, and 288 are equivalent to an existing uPheno class.
+  - Every class has a uPheno grouping, and 296 are equivalent to an existing uPheno class.
   - Many groupings are broad (e.g. *cell phenotype*, *decreased resistance of organism to chemical
     entity*), because uPheno lacks intermediate classes and FBbt has few exact bridges. `output/summary.md`
     reports this on every run.
