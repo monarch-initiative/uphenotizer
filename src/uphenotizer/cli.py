@@ -58,12 +58,13 @@ def run(args: argparse.Namespace) -> int:
     bind(outcomes, maps)
     summary = write_outputs(outcomes, catalog, upheno_ids, args.out)
     write_dosdp_tables(maps, catalog, args.dosdp_out)
-    id_lines = ["", "## Component IDs", "", "| component | minted | deprecated | reactivated |",
+    id_lines = ["", "## Component IDs", "",
+                "| component | classes | minted this run | not used by current annotations |",
                 "|---|---:|---:|---:|"]
     for src in sorted(sources):
         m = maps[src]
-        id_lines.append(f"| {m.component.name} | {m.stats.get('minted', 0)} | "
-                        f"{m.stats.get('deprecated', 0)} | {m.stats.get('reactivated', 0)} |")
+        id_lines.append(f"| {m.component.name} | {len(m.rows)} | {m.stats.get('minted', 0)} | "
+                        f"{m.stats.get('unused', 0)} |")
     summary = summary.rstrip("\n") + "\n" + "\n".join(id_lines) + "\n"
     (Path(args.out) / "summary.md").write_text(summary, encoding="utf-8")
     print(summary)

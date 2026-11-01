@@ -52,13 +52,13 @@ def test_rebinding_when_chemical_appears(catalog, upheno_dir, tmp_path):
     assert "fallback" not in o.extra
     assert o.extra["key"] == f"CHEBI:29699-{DEC_RES}"
     assert o.extra["class_id"] != generic_id                       # re-bound to the specific class
-    assert m2.rows[f"CHEBI:24431-{DEC_RES}"]["status"] == "deprecated"  # nothing binds to it anymore
-    assert m2.rows[f"CHEBI:24431-{DEC_RES}"]["id"] == generic_id    # ID kept, never reused
+    assert m2.rows[f"CHEBI:24431-{DEC_RES}"]["id"] == generic_id    # generic class kept, ID stable
+    assert m2.stats == {"minted": 1, "unused": 1}                   # ...but nothing binds to it
 
 
-def test_generic_class_stays_while_some_records_lack_chemical(catalog, upheno_dir, tmp_path):
+def test_generic_class_binds_while_some_records_lack_chemical(catalog, upheno_dir, tmp_path):
     idmaps = tmp_path / "idmaps"
     run([record(), record()], catalog, upheno_dir, idmaps)
     week2, m = run([record("CHEBI:29699"), record()], catalog, upheno_dir, idmaps)
     assert {o.extra["key"] for o in week2} == {f"CHEBI:29699-{DEC_RES}", f"CHEBI:24431-{DEC_RES}"}
-    assert m.rows[f"CHEBI:24431-{DEC_RES}"]["status"] == "active"
+    assert m.stats["unused"] == 0

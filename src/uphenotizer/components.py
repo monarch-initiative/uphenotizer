@@ -20,6 +20,8 @@ class Component:
     title: str
     first: int         # first number of the component's ID range
     last: int          # last number of the range (inclusive)
+    taxon: str         # RO:0002162 'in taxon' on every class (same taxon the KG gives the MOD's genes)
+    subset: str        # oboInOwl:inSubset, for search scoping
 
     iri_base: str = ENTITY_BASE
     prefix: str = CURIE_PREFIX
@@ -39,8 +41,9 @@ class Component:
 
 COMPONENTS = {
     "FB": Component("dpo-ext", "FB", "DPO-ext: FlyBase phenotypes pre-composed from Alliance annotations",
-                    1000000, 1999999),
+                    1000000, 1999999, taxon="NCBITaxon:7227", subset="fly_phenotype"),
+    # NCBITaxon:559292 (S. cerevisiae S288C): the taxon SGD genes carry in the Alliance files and the KG.
     "SGD": Component("apo-ext", "SGD", "APO-ext: SGD phenotypes pre-composed from Alliance annotations",
-                     2000000, 2999999),
+                     2000000, 2999999, taxon="NCBITaxon:559292", subset="yeast_phenotype"),
 }
 

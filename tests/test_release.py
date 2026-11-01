@@ -2,7 +2,7 @@ import csv
 
 from uphenotizer.components import COMPONENTS
 from uphenotizer.idmap import ComponentIdMap
-from uphenotizer.release import SUMMARY_MARKER, release
+from uphenotizer.release import SUMMARY_MARKER, USAGE_NOTE, release
 
 BASE = "https://w3id.org/monarch-initiative/entity/PHENOTYPE_"
 
@@ -18,15 +18,16 @@ def setup(tmp_path):
     m.update({"FBbt:1-abnormalAnatomicalEntity", "FBbt:2-abnormalAnatomicalEntity",
               "GO:1-abnormalBiologicalProcess", "FBbt:9-abnormalAnatomicalEntity"})
     m.update({"FBbt:1-abnormalAnatomicalEntity", "FBbt:2-abnormalAnatomicalEntity",
-              "GO:1-abnormalBiologicalProcess"})  # FBbt:9 deprecated
+              "GO:1-abnormalBiologicalProcess"})  # FBbt:9 no longer annotated, still released
     m.save()
-    ids = {k: iri for k, iri, _ in m.items()}
+    ids = dict(m.items())
     a, b, g, x = (ids["FBbt:1-abnormalAnatomicalEntity"], ids["FBbt:2-abnormalAnatomicalEntity"],
                   ids["GO:1-abnormalBiologicalProcess"], ids["FBbt:9-abnormalAnatomicalEntity"])
     classified = tmp_path / "classified.tsv"
     classified.write_text(
         "ID\tLABEL\tSubClass Of\tEquivalent Class\n"
-        f"{a}\tabnormal A\t{b}\t\n"                       # A below B (in-component)
+        f"{a}\tabnormal A\t{b}\tBFO:0000051 some (PATO:0000001 and (RO:0002314 some FBbt:1) "
+        "and (RO:0002573 some PATO:0000460))\n"           # A below B (in-component)
         f"{b}\tabnormal B\tUPHENO:2\t\n"
         f"{g}\tabnormal G\tUPHENO:1\tUPHENO:7\n"          # exact match
         f"{x}\tabnormal X\tUPHENO:2\t\n"
@@ -56,20 +57,44 @@ def curie(iri):
 
 def test_base_template(tmp_path):
     out, (a, b, _g, x) = setup(tmp_path)
-    rows = {r[0]: r for r in read(out / "templates" / "dpo-ext-base.tsv")[2:]}
-    assert rows[tc(a)][2] == tc(b)                      # in-component parent
-    assert rows[tc(b)][2] == ""                         # parent is UPHENO -> bridge, not base
-    assert rows[tc(x)][1] == "true"                     # deprecated
-    assert "5 FB phenotype annotations" in rows[tc(a)][3]
+    all_rows = read(out / "templates" / "dpo-ext-base.tsv")
+    assert all_rows[1][:2] == ["ID", "SC % SPLIT=|"]
+    assert "owl:deprecated" not in "\t".join(all_rows[1])  # no deprecation, ever
+    rows = {r[0]: r for r in all_rows[2:]}
+    assert rows[tc(a)][1] == tc(b)                      # in-component parent
+    assert rows[tc(b)][1] == ""                         # parent is UPHENO -> bridge, not base
+    assert rows[tc(a)][2] == rows[tc(a)][3] == "FBbt:1"  # affects + associated with the bearer
+    assert rows[tc(b)][2] == ""                          # no definition -> no link
+    assert "5 FB phenotype annotations" in rows[tc(a)][4]
+    assert "not used by current FB phenotype annotations" in rows[tc(x)][4]
+    assert all(r[5] == USAGE_NOTE for r in rows.values())
+    assert all_rows[1][6:8] == ["SC 'in taxon' some %", "AI oboInOwl:inSubset"]
+    assert all(r[6] == "NCBITaxon:7227" for r in rows.values())   # FlyBase -> D. melanogaster
+    assert all(r[7] == "uphenotizer:fly_phenotype" for r in rows.values())
 
 
-def test_bridge_template_exact_wins_and_deprecated_excluded(tmp_path):
+def test_taxa_and_subsets_per_component():
+    from uphenotizer.components import COMPONENTS
+    assert (COMPONENTS["FB"].taxon, COMPONENTS["FB"].subset) == ("NCBITaxon:7227", "fly_phenotype")
+    # SGD genes carry NCBITaxon:559292 (S288C) in the Alliance files and the Monarch KG
+    assert (COMPONENTS["SGD"].taxon, COMPONENTS["SGD"].subset) == \
+        ("NCBITaxon:559292", "yeast_phenotype")
+
+
+def test_duplicate_labels_reported(tmp_path):
+    out, (_a, _b, _g, _x) = setup(tmp_path)
+    text = (out / "summary.md").read_text()
+    assert "Duplicate labels within a component" in text
+    assert "None." in text  # fixture labels are unique
+
+
+def test_bridge_template_exact_wins_and_unused_classes_still_bridged(tmp_path):
     out, (a, b, g, x) = setup(tmp_path)
     rows = {r[0]: r[1] for r in read(out / "templates" / "dpo-ext-bridge.tsv")[2:]}
     assert rows[tc(g)] == "UPHENO:7"
     assert rows[tc(b)] == "UPHENO:2"
     assert rows[tc(a)] == "UPHENO:2"                    # through B
-    assert tc(x) not in rows
+    assert rows[tc(x)] == "UPHENO:2"                    # not annotated anymore, still released
 
 
 def test_sssom(tmp_path):
@@ -89,4 +114,4 @@ def test_summary_section_replaced(tmp_path):
     text = (out / "summary.md").read_text()
     assert "stale" not in text
     assert text.count(SUMMARY_MARKER) == 1
-    assert "| dpo-ext | 3 | 1 | 1 | 2 | 0 | 1 |" in text
+    assert "| dpo-ext | 4 | 1 | 3 | 0 | 1 |" in text

@@ -9,11 +9,12 @@ tp=$(echo "$comp" | tr -d '-')
 versions=$(echo "$files" | sed 's#/release/$#/releases/#')
 mkdir -p release
 
-robot merge -i "tmp/gen/$comp.owl" \
+robot merge -i "tmp/gen/$comp.owl" -i config/declarations.ofn \
   remove --axioms "equivalent subclass" \
   template --merge-before --template "tmp/templates/$comp-base.tsv" --prefix "$tp: $entity" \
+    --prefix "uphenotizer: https://w3id.org/monarch-initiative/uphenotizer#" \
   remove --base-iri "$entity" --axioms external --preserve-structure false --trim false \
-  query --update sparql/obsolete-labels.ru \
+  merge -i config/declarations.ofn \
   annotate --ontology-iri "$files$comp-base.owl" --version-iri "$versions$version/$comp-base.owl" \
     --annotation http://purl.org/dc/terms/title "$title" \
     --annotation owl:versionInfo "$version" \

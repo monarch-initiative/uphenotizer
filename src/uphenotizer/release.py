@@ -7,11 +7,13 @@ from pathlib import Path
 
 from uphenotizer.classify import Hierarchy, is_upheno
 from uphenotizer.components import COMPONENTS, Component
-from uphenotizer.idmap import ACTIVE, ComponentIdMap
+from uphenotizer.idmap import ComponentIdMap
 from uphenotizer.model import PENDING, ROUTED
 
 UPHENO_IRI = "http://purl.obolibrary.org/obo/UPHENO_"
 SUMMARY_MARKER = "## Components and uPheno bridges"
+USAGE_NOTE = ("This class is not intended for use in curation or annotation. "
+              "Use uPheno classes instead.")
 
 
 def template_prefix(component: Component) -> str:
@@ -27,10 +29,10 @@ def template_curie(component: Component, iri: str) -> str:
 class ClassResult:
     iri: str
     key: str
-    active: bool
     exact: set[str] = field(default_factory=set)
     groupings: set[str] = field(default_factory=set)
     parents: set[str] = field(default_factory=set)  # in-component
+    affects: set[str] = field(default_factory=set)  # bearers: UPHENO:0000001 / UPHENO:0000003
 
     @property
     def bridge(self) -> set[str]:
@@ -38,16 +40,13 @@ class ClassResult:
 
 
 def classify_component(m: ComponentIdMap, h: Hierarchy) -> list[ClassResult]:
-    active = {iri for _, iri, status in m.items() if status == ACTIVE}
-    results = []
-    for key, iri, status in m.items():
-        r = ClassResult(iri, key, status == ACTIVE)
-        if r.active:
-            r.exact = h.exact(iri, is_upheno)
-            r.groupings = h.nearest(iri, is_upheno)
-            r.parents = h.nearest(iri, lambda c: c in active)
-        results.append(r)
-    return results
+    """Every class ever minted is released (no deprecation), so every class is classified."""
+    members = {iri for _, iri in m.items()}
+    return [ClassResult(iri, key, exact=h.exact(iri, is_upheno),
+                        groupings=h.nearest(iri, is_upheno),
+                        parents=h.nearest(iri, lambda c: c in members),
+                        affects=h.bearers(iri))
+            for key, iri in m.items()]
 
 
 def load_provenance(source_map: str | Path) -> dict[tuple[str, str], tuple[int, str]]:
@@ -68,17 +67,29 @@ def _write(path: Path, rows: list[list[str]]) -> None:
 
 def write_templates(component: Component, results: list[ClassResult],
                     provenance: dict, outdir: Path) -> None:
-    base = [["ID", "deprecated", "parents", "comment"],
-            ["ID", "AT owl:deprecated^^xsd:boolean", "SC % SPLIT=|", "A rdfs:comment"]]
+    # Direct phenotype -> entity links, in the exact form PHENIO's extract-upheno-relations adds
+    # them (it can't derive them here, because the released classes carry no logical definitions).
+    base = [["ID", "parents", "phenotype affects entity", "phenotype is associated with entity",
+             "provenance", "usage", "taxon", "subset"],
+            ["ID", "SC % SPLIT=|", "SC 'phenotype affects entity' some % SPLIT=|",
+             "SC 'phenotype is associated with entity' some % SPLIT=|", "A rdfs:comment",
+             "A rdfs:comment", "SC 'in taxon' some %", "AI oboInOwl:inSubset"]]
     bridge = [["ID", "uPheno grouping"], ["ID", "SC % SPLIT=|"]]
     for r in results:
         n, example = provenance.get((component.source, r.key), (0, ""))
-        noun = "annotation" if n == 1 else "annotations"
-        comment = (f"Pre-composed by uphenotizer from {n} {component.source} phenotype {noun}"
-                   f" (e.g. \"{example}\"). Key: {r.key}" if r.active else f"Key: {r.key}")
-        base.append([template_curie(component, r.iri), "" if r.active else "true",
-                     "|".join(sorted(template_curie(component, p) for p in r.parents)), comment])
-        if r.active and r.bridge:
+        if n:
+            noun = "annotation" if n == 1 else "annotations"
+            comment = (f"Pre-composed by uphenotizer from {n} {component.source} phenotype {noun}"
+                       f" (e.g. \"{example}\"). Key: {r.key}")
+        else:
+            comment = (f"Pre-composed by uphenotizer; not used by current {component.source} "
+                       f"phenotype annotations. Key: {r.key}")
+        affects = "|".join(sorted(r.affects))
+        base.append([template_curie(component, r.iri),
+                     "|".join(sorted(template_curie(component, p) for p in r.parents)),
+                     affects, affects, comment, USAGE_NOTE, component.taxon,
+                     f"uphenotizer:{component.subset}"])
+        if r.bridge:
             bridge.append([template_curie(component, r.iri), "|".join(sorted(r.bridge))])
     _write(outdir / f"{component.name}-base.tsv", base)
     _write(outdir / f"{component.name}-bridge.tsv", bridge)
@@ -99,8 +110,6 @@ def write_sssom(component: Component, results: list[ClassResult], h: Hierarchy,
     rows = [["subject_id", "subject_label", "predicate_id", "object_id", "object_label",
              "mapping_justification"]]
     for r in results:
-        if not r.active:
-            continue
         predicate = "semapv:crossSpeciesExactMatch" if r.exact else "skos:broadMatch"
         for target in sorted(r.bridge):
             rows.append([component.curie(r.iri), h.labels.get(r.iri, ""), predicate, target,
@@ -113,21 +122,37 @@ def write_sssom(component: Component, results: list[ClassResult], h: Hierarchy,
 
 def summary_section(per_component: dict[str, list[ClassResult]], h: Hierarchy, top: int = 10) -> str:
     lines = [SUMMARY_MARKER, "",
-             ("| component | active | deprecated | equivalent to UPHENO | grouped under UPHENO | "
+             ("| component | classes | equivalent to UPHENO | grouped under UPHENO | "
               "no UPHENO grouping | with in-component parent |"),
-             "|---|---:|---:|---:|---:|---:|---:|"]
+             "|---|---:|---:|---:|---:|---:|"]
     tops = {}
     for name, results in per_component.items():
-        act = [r for r in results if r.active]
-        lines.append(f"| {name} | {len(act)} | {len(results) - len(act)} | "
-                     f"{sum(1 for r in act if r.exact)} | "
-                     f"{sum(1 for r in act if not r.exact and r.groupings)} | "
-                     f"{sum(1 for r in act if not r.bridge)} | {sum(1 for r in act if r.parents)} |")
-        tops[name] = Counter(g for r in act for g in r.bridge).most_common(top)
+        lines.append(f"| {name} | {len(results)} | {sum(1 for r in results if r.exact)} | "
+                     f"{sum(1 for r in results if not r.exact and r.groupings)} | "
+                     f"{sum(1 for r in results if not r.bridge)} | "
+                     f"{sum(1 for r in results if r.parents)} |")
+        tops[name] = Counter(g for r in results for g in r.bridge).most_common(top)
     for name, common in tops.items():
         lines += ["", f"Most frequent uPheno groupings, {name}:", ""]
         lines += [f"- {n} × `{g}` {h.labels.get(g, '')}" for g, n in common]
+
+    lines += ["", "### Duplicate labels within a component", ""]
+    duplicates = {name: duplicate_labels(results, h) for name, results in per_component.items()}
+    if not any(duplicates.values()):
+        lines.append("None.")
+    for name, dups in duplicates.items():
+        for label, iris in dups.items():
+            lines.append(f"- {name}: \"{label}\" on {', '.join(sorted(iris))}. Usually an FBbt term "
+                         "duplicating a GO term without an axiom; see `fbbt_as_go` in config/flybase.yaml")
     return "\n".join(lines) + "\n"
+
+
+def duplicate_labels(results: list[ClassResult], h: Hierarchy) -> dict[str, list[str]]:
+    by_label = defaultdict(list)
+    for r in results:
+        if label := h.labels.get(r.iri):
+            by_label[label].append(r.iri)
+    return {label: iris for label, iris in sorted(by_label.items()) if len(iris) > 1}
 
 
 def release(idmap_dir: str | Path, classified: str | Path, source_map: str | Path,

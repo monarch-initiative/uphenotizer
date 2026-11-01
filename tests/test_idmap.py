@@ -30,31 +30,30 @@ def test_range_enforced():
         DPO.iri(2000000)
 
 
-def test_ids_survive_reload_and_never_reassigned(tmp_path):
+def test_unused_keys_keep_their_class_and_ids_are_never_reused(tmp_path):
     p = tmp_path / "dpo-ext.tsv"
     m = ComponentIdMap(DPO, p)
     m.update({"A-P", "B-P"})
     m.save()
     m2 = ComponentIdMap(DPO, p)
-    stats = m2.update({"B-P", "C-P"})
-    assert stats == {"minted": 1, "deprecated": 1, "reactivated": 0}
-    assert m2.rows["A-P"]["status"] == "deprecated"
-    assert m2.rows["C-P"]["id"] == "PHENOTYPE:1000002"  # never reuses A's number
+    assert m2.update({"B-P", "C-P"}) == {"minted": 1, "unused": 1}
+    assert [k for k, _ in m2.items()] == ["A-P", "B-P", "C-P"]  # A is still released
+    assert m2.rows["C-P"]["id"] == "PHENOTYPE:1000002"
 
 
-def test_reactivation_keeps_id(tmp_path):
-    m = ComponentIdMap(DPO, tmp_path / "x.tsv")
-    m.update({"A-P"})
-    m.update(set())
-    assert m.update({"A-P"}) == {"minted": 0, "deprecated": 0, "reactivated": 1}
-    assert m.rows["A-P"]["id"] == "PHENOTYPE:1000000"
+def test_reading_old_maps_with_status_column(tmp_path):
+    p = tmp_path / "x.tsv"
+    p.write_text("id\tkey\tstatus\nPHENOTYPE:1000000\tA-P\tdeprecated\n")
+    m = ComponentIdMap(DPO, p)
+    m.save()
+    assert p.read_text() == "id\tkey\nPHENOTYPE:1000000\tA-P\n"
 
 
 def test_items_ordered_by_id(tmp_path):
     m = ComponentIdMap(DPO, tmp_path / "x.tsv")
     m.update({"Z-P"})
     m.update({"Z-P", "A-P"})
-    assert [k for k, _, _ in m.items()] == ["Z-P", "A-P"]
+    assert [k for k, _ in m.items()] == ["Z-P", "A-P"]
 
 
 def test_file_iri():

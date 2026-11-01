@@ -1,0 +1,30 @@
+Prefix(:=<http://purl.obolibrary.org/obo/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(uphenotizer:=<https://w3id.org/monarch-initiative/uphenotizer#>)
+
+Ontology(<https://w3id.org/monarch-initiative/uphenotizer/declarations.owl>
+
+# Phenotype -> entity relations PHENIO adds via upheno:extract-upheno-relations (definitions as in uPheno).
+Declaration(ObjectProperty(:UPHENO_0000001))
+Declaration(ObjectProperty(:UPHENO_0000003))
+AnnotationAssertion(rdfs:label :UPHENO_0000001 "phenotype affects entity")
+AnnotationAssertion(rdfs:label :UPHENO_0000003 "phenotype is associated with entity")
+SubObjectPropertyOf(:UPHENO_0000001 :UPHENO_0000003)
+
+# Taxon of the phenotype. The shared PHENOTYPE: prefix doesn't identify the species the way HP, MP or ZP do.
+Declaration(ObjectProperty(:RO_0002162))
+AnnotationAssertion(rdfs:label :RO_0002162 "in taxon")
+
+# Subsets for search scoping (Monarch search filters on subset).
+Declaration(AnnotationProperty(oboInOwl:inSubset))
+Declaration(AnnotationProperty(oboInOwl:SubsetProperty))
+Declaration(AnnotationProperty(uphenotizer:fly_phenotype))
+AnnotationAssertion(rdfs:label uphenotizer:fly_phenotype "fly phenotype")
+AnnotationAssertion(rdfs:comment uphenotizer:fly_phenotype "Drosophila melanogaster phenotypes pre-composed from FlyBase annotations (DPO-ext).")
+SubAnnotationPropertyOf(uphenotizer:fly_phenotype oboInOwl:SubsetProperty)
+Declaration(AnnotationProperty(uphenotizer:yeast_phenotype))
+AnnotationAssertion(rdfs:label uphenotizer:yeast_phenotype "yeast phenotype")
+AnnotationAssertion(rdfs:comment uphenotizer:yeast_phenotype "Saccharomyces cerevisiae phenotypes pre-composed from SGD annotations (APO-ext).")
+SubAnnotationPropertyOf(uphenotizer:yeast_phenotype oboInOwl:SubsetProperty)
+)

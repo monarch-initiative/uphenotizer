@@ -19,8 +19,7 @@ def split_key(key: str) -> tuple[list[str], str]:
 
 def update_idmaps(outcomes: list[Outcome], idmap_dir: str | Path,
                   sources: set[str]) -> dict[str, ComponentIdMap]:
-    """Mint/deprecate IDs. Only components whose source was processed are updated, so a partial
-    run (e.g. FlyBase only) never deprecates the other component's classes."""
+    """Mint IDs for new keys. Only components whose source was processed are updated (and saved)."""
     keys = defaultdict(set)
     for o in outcomes:
         if o.status in (ROUTED, PENDING):
@@ -44,14 +43,14 @@ def bind(outcomes: list[Outcome], maps: dict[str, ComponentIdMap]) -> None:
 
 def write_dosdp_tables(maps: dict[str, ComponentIdMap], catalog: PatternCatalog,
                        outdir: str | Path) -> None:
-    """tmp/dosdp/<component>/<pattern>.tsv (all keys, incl. deprecated), the pattern YAMLs and
+    """tmp/dosdp/<component>/<pattern>.tsv (every key ever minted), the pattern YAMLs and
     fillers.txt (every filler CURIE, for extracting labels)."""
     outdir = Path(outdir)
     fillers_seen: set[str] = set()
     patterns_used: set[str] = set()
     for m in maps.values():
         tables: dict[str, list[list[str]]] = defaultdict(list)
-        for key, iri, _status in m.items():
+        for key, iri in m.items():
             fillers, pattern = split_key(key)
             tables[pattern].append([iri] + [expand(f) for f in fillers])
             fillers_seen.update(fillers)
