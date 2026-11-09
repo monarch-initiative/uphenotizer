@@ -12,6 +12,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    env:
+      # v1.7 is not published yet; the Makefile default (v1.7) is for local runs.
+      ODK_IMAGE: obolibrary/odkfull:v1.6.1
     steps:
       - uses: actions/checkout@v4
 
@@ -28,7 +31,7 @@ jobs:
       # ROBOT / dosdp-tools steps run in the ODK container (docker is available on GitHub runners).
       # ELK peaks at ~10 GB with a 12 GB heap, which fits the 16 GB runner.
       - name: Pull ODK
-        run: docker pull obolibrary/odkfull:v1.7
+        run: docker pull "$ODK_IMAGE"
 
       - name: Download inputs, route, mint, generate, classify, assemble
         run: make all
