@@ -6,7 +6,6 @@ TMP          := tmp
 CTX          := $(TMP)/ctx
 ALLIANCE     := https://fms.alliancegenome.org/download
 OBO          := http://purl.obolibrary.org/obo
-SHEET        := https://docs.google.com/spreadsheets/d/e/2PACX-1vSsKbr0TJHfigCvG1RNQgybZrSl3Eh8DRLpnQR-51bFe0Stxt7DdBKBF6E4SQ6NPqJr82UTFZmjindF/pub
 # Class IRIs (both components, disjoint number ranges) and release file IRIs; see components.py.
 ENTITY_BASE  := https://w3id.org/monarch-initiative/entity/PHENOTYPE_
 FILE_BASE    := https://w3id.org/monarch-initiative/uphenotizer/release/
@@ -20,9 +19,9 @@ ODK_MEM      ?= 12G
 ODK          ?= docker run --rm -i -v $(CURDIR):/work -w /work \
                   -e ROBOT_JAVA_ARGS=-Xmx$(ODK_MEM) -e JAVA_OPTS=-Xmx$(ODK_MEM) $(ODK_IMAGE)
 
-.PHONY: all install test lint download mappings route components generate classify release assemble clean
+.PHONY: all install test lint download route components generate classify release assemble clean
 
-all: download mappings route components
+all: download route components
 
 install:
 	uv sync
@@ -68,12 +67,6 @@ $(CTX)/chebi_lite.owl: | $(CTX)
 
 $(CTX)/uberon-bridge-to-fbbt.owl $(CTX)/cl-bridge-to-fbbt.owl: | $(CTX)
 	$(CURL) $@ $(OBO)/uberon/bridge/$(notdir $@)
-
-# APO -> PATO/OBA/GO mappings, curated in a Google Sheet. Committed so changes show up in PRs.
-mappings:
-	$(CURL) data/apo_oba.sssom.tsv "$(SHEET)?gid=0&single=true&output=tsv"
-	$(CURL) data/apo_go.sssom.tsv "$(SHEET)?gid=575540781&single=true&output=tsv"
-	$(CURL) data/apo_pato.sssom.tsv "$(SHEET)?gid=1739417682&single=true&output=tsv"
 
 #############################
 ### Pipeline ################

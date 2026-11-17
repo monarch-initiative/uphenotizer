@@ -48,5 +48,4 @@ jobs:
             release/
             idmaps/
             output/
-            data/apo_*.sssom.tsv
           assignees: matentzn

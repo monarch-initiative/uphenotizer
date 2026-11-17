@@ -143,7 +143,7 @@ Requires [uv](https://docs.astral.sh/uv/), `curl` and Docker (for the ODK image 
 ```bash
 make install      # uv sync
 make test         # offline unit tests
-make all          # download, refresh APO mappings, route + mint, generate, classify, assemble
+make all          # download, route + mint, generate, classify, assemble
 make route        # Python only: route, mint IDs, DOSDP tables, reports
 make components   # ODK + Python: generate, classify (ELK), release templates/SSSOM, assemble OWL
 make route UPHENO_DIR=~/ws/ont/upheno   # use a local uPheno checkout instead of GitHub
@@ -152,8 +152,8 @@ make route UPHENO_DIR=~/ws/ont/upheno   # use a local uPheno checkout instead of
 Downloads go to `tmp/` (about 1 GB of ontologies for the reasoning context). Classification takes about
 3 minutes and peaks at about 10 GB with the default 12 GB heap (`ODK_MEM`).
 
-`data/apo_{pato,oba,go}.sssom.tsv` are the APO→PATO/OBA/GO mappings curated in a Google Sheet.
-`make mappings` refreshes them, and they're committed so that mapping changes show up in review.
+`data/apo_{pato,oba,go}.sssom.tsv` are the APO→PATO/OBA/GO mappings. They're curated here, in the repo,
+so mapping changes go through review like any other change.
 `.github/workflows/weekly.yaml` runs every Monday and opens a PR with `output/summary.md` as its description.
 The repo must allow GitHub Actions to create pull requests.
 

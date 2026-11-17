@@ -16,7 +16,7 @@ make lint                              # ruff
 make download                          # Alliance dumps, OBO files, reasoning context (~1 GB) into tmp/
 make route UPHENO_DIR=~/ws/ont/upheno  # Python: route, mint IDs, DOSDP tables, reports (~20 s)
 make components                        # ODK: generate, classify (ELK, ~3 min, ~10 GB), release, assemble
-make all                               # what CI runs: download + mappings + route + components
+make all                               # what CI runs: download + route + components
 ```
 
 ODK steps run as `docker run -i obolibrary/odkfull:v1.7 sh scripts/odk-*.sh`. Never use `-t` (it breaks
@@ -39,7 +39,7 @@ non-TTY shells). Set `ODK=` to run them natively inside an ODK image, and `ODK_M
   entity relations, "in taxon" and the `fly_phenotype` / `yeast_phenotype` subsets used in the base files.
   Each component's taxon and subset live in `components.py`.
 - `config/`: routing tables. **Curation lives here, not in code.**
-- `data/apo_*.sssom.tsv`: APO mappings downloaded from a Google Sheet (the source of truth). Never hand-edit them.
+- `data/apo_*.sssom.tsv`: APO mappings, curated in the repo (the source of truth). Edit them by hand, like `config/`.
 - `patterns/`: local patterns not yet in uPheno. Rows routed to them go to `output/pending/`.
 - `idmaps/`, `release/` and `output/`: generated and committed. Never hand-edit them (except to fix `idmaps/`
   by deliberate curation); rerun the pipeline instead.
