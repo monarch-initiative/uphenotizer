@@ -8,9 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/monarch-initiative/uphenotizer/release/dpo-ext-bridge.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/monarch-initiative/uphenotizer/releases/2026-11-01/dpo-ext-bridge.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/monarch-initiative/uphenotizer/releases/2026-11-18/dpo-ext-bridge.owl"/>
         <terms:title>DPO-ext: FlyBase phenotypes pre-composed from Alliance annotations: uPheno bridge</terms:title>
-        <owl:versionInfo>2026-11-01</owl:versionInfo>
+        <owl:versionInfo>2026-11-18</owl:versionInfo>
     </owl:Ontology>
     
 
