@@ -11,9 +11,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:uphenotizer="https://w3id.org/monarch-initiative/uphenotizer#">
     <owl:Ontology rdf:about="https://w3id.org/monarch-initiative/uphenotizer/release/dpo-ext-base.owl">
-        <owl:versionIRI rdf:resource="https://w3id.org/monarch-initiative/uphenotizer/releases/2026-11-18/dpo-ext-base.owl"/>
+        <owl:versionIRI rdf:resource="https://w3id.org/monarch-initiative/uphenotizer/releases/2026-11-23/dpo-ext-base.owl"/>
         <terms:title>DPO-ext: FlyBase phenotypes pre-composed from Alliance annotations</terms:title>
-        <owl:versionInfo>2026-11-18</owl:versionInfo>
+        <owl:versionInfo>2026-11-23</owl:versionInfo>
     </owl:Ontology>
     
 
